@@ -1,0 +1,127 @@
+\documentclass[a4paper]{book}
+\usepackage{polyglossia}
+\usepackage{subfiles}
+\usepackage[inner=2.8cm,outer=4.8cm,twoside]{geometry}
+\usepackage{amsmath,mathtools, amssymb, amsfonts, amsthm}
+\usepackage{titling}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage[shortlabels]{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{minted}
+\usepackage{comment}
+\usepackage{import}
+
+\setdefaultlanguage{french}
+
+% Theorem environments
+
+\theoremstyle{definition}
+\newtheorem{mydef}{Définition}[section]
+\newtheorem{exe}{Exemple}[section]
+\newtheorem{exo}{Exercice}[chapter]
+
+\theoremstyle{plain}
+\newtheorem{lem}[mydef]{Lemme}
+\newtheorem{thm}[mydef]{Théorème}
+\newtheorem{prop}[mydef]{Proposition}
+\newtheorem{cor}[mydef]{Corollaire}
+
+\theoremstyle{remark}
+\newtheorem*{rem}{Remarque}
+
+\setlist{itemsep=0pt}
+
+% Math commands
+
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+\renewcommand\epsilon\varepsilon
+\renewcommand\phi\varphi
+\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}%
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}%
+\newcommand{\dif}[1]{\mathop{\mathrm{d}#1}}
+
+% Code
+
+\renewcommand{\listingscaption}{Code}
+
+% Titling style
+
+\pretitle{\begin{center}\LARGE}
+\title{
+    \textsc{
+        Mathématiques T\textsuperscript{ale} S \\ Cours d'approfondissement
+    }
+}
+\posttitle{\par\end{center}\vspace{-3.2em}}
+
+\preauthor{\begin{center}\large}
+\author{}
+\postauthor{\par\end{center}}
+
+\renewcommand{\thechapter}{\Roman{chapter}}
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\theequation}{\arabic{equation}}
+\renewcommand{\thefigure}{\arabic{figure}}
+
+
+\newcommand{\onlyinsubfile}[1]{#1}
+\newcommand{\notinsubfile}[1]{}
+
+% Page style
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[LO,RE]{\rightmark}
+\fancyhead[RO,LE]{\thepage}
+\fancyfoot{}
+\fancyfoot[LE]{\leftmark}
+
+\renewcommand{\chaptermark}[1]{
+	\markboth{
+    	\MakeUppercase{
+    	\chaptername\ \thechapter.\ \textsl{#1}
+        }
+    }{}
+    }
+
+\renewcommand{\footrulewidth}{0.4pt}
+
+\begin{document}
+
+\maketitle
+
+\renewcommand{\onlyinsubfile}[1]{}
+\renewcommand{\notinsubfile}[1]{#1}
+
+\vspace{1cm}
+
+\tableofcontents
+\newpage
+
+\chapter{Suites, épisode 1}
+
+    \subfile{parts/suites_ep1.tex}
+\newpage
+
+\chapter{Fonctions de la variable réelle, épisode 1}
+
+    \subfile{parts/fcts_ep1.tex}
+\newpage
+
+\chapter{Suites, épisode 2}
+
+    \subfile{parts/suites_ep2.tex}
+\newpage
+
+\chapter{Équations différentielles}
+
+    \subfile{parts/eqdiff.tex}
+
+\end{document}

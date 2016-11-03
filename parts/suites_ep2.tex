@@ -1,0 +1,81 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+\onlyinsubfile{
+    \begin{center}
+    {\LARGE \textsc{Compléments:\\ Suites, épisode 2}}
+    \end{center}
+}
+
+
+\section{Sommes}
+
+\section{Introduction aux séries numériques}
+
+\begin{mydef}[Série]
+	Soit $u$ une suite réelle. On appelle \textit{série de terme général $u_n$}, et on note $\sum u_n$, la suite $(S_n)_{n\in\N}$ des \textit{sommes partielles de $(u_n)$} définie par:
+	\[
+	S_n := u_0 + \cdots + u_n.
+	\]
+	Le terme $S_n$ est appelé \textit{somme partielle de rang $n$}.
+\end{mydef}
+
+\begin{mydef}[Convergence d'une série]\leavevmode
+	\begin{itemize}
+		\item Soit $\sum u_n$ une série. On dit qu'elle est \textit{convergente} lorsque sa suite des sommes partielles converge \textbf{vers une limite finie}. Dans ce cas, on appelle \textit{somme de la série $\sum u_n$} la limite de $(S_n)$, qu'on note:
+		\[
+		\sum_{n=0}^{+\infty} u_n = \lim_{n\to +\infty} S_n.
+		\]
+		\item Dans le cas contraire, la série est dite \textit{divergente} ($(S_n)$ n'admet donc soit pas de limite, soit une limite infinie).
+	\end{itemize}
+\end{mydef}
+
+\begin{prop}
+	Soit $(u_n)$ une suite telle que $\sum u_n$ converge. Alors $u_n\xrightarrow[n\to+\infty]{}0$.
+\end{prop}
+
+\begin{exo}[M]
+	\begin{enumerate}
+		\item Soit $u$ une suite arithmétique de raison $r$ non nulle. Est-ce que la série de terme général $u_n$ converge ?
+		\item Soit $q$ un réel. Étudier la convergence de la série $\sum q^n$. Si elle converge, quelle est sa somme ? Sinon, $(S_n)$ admet-elle une limite ?
+	\end{enumerate}
+\end{exo}
+
+\begin{exo}[M]
+	Soit $u$ une suite à termes positifs. Montrer que $\sum u_n$ converge dès que $(S_n)$ est majorée, et que sinon on a $S_n \to +\infty$.
+\end{exo}
+
+Ce résultat permet d'ailleurs d'énoncer la propriété suivante:
+\begin{prop}
+	Soient $u$ et $v$ deux suites positives. On suppose que $u_n\leq v_n$. Alors:
+	\begin{itemize}
+		\item Si $\sum v_n$ converge alors $\sum u_n$ converge aussi.
+		\item Si $\sum u_n$ diverge alors $\sum v_n$ diverge aussi.
+	\end{itemize}
+\end{prop}
+
+\begin{exo}[Critère de d'Alembert, D]
+	Soit $u$ une suite positive. On suppose que \[\frac{u_{n+1}}{u_n}\xrightarrow[n\to+\infty]{}\ell\in\R^+.\] \begin{enumerate}
+		\item Montrer que si $0\leq\ell < 1$ alors $\sum u_n$ converge.
+		\item Montrer que si $\ell>1$ alors $\sum u_n$ diverge.
+		\item Et si $\ell=1$ ?
+	\end{enumerate}
+	\textit{Indication:} Comparer $u$ et une suite géométrique pour utiliser la proposition précédente.
+\end{exo}
+
+\section{Comparaison série-intégrale}
+
+\begin{thm}
+	Soit $(u_n)_{n\in\N}$ une suite réelle. On suppose qu'il existe $f:{[0,+\infty[}\rightarrow\R^+$ continue et décroissante telle que pour tout $n\in\N$, $u_n=f(n)$. Alors la série $\sum u_n$ converge ssi la fonction
+	\[
+	x\in\R^+\longmapsto \int_{0}^{x}f(t)\dif t
+	\]
+	admet une limite finie en $+\infty$.
+\end{thm}
+
+\begin{exo}
+	Montrer que la série $\sum \frac{1}{n}$ diverge.
+\end{exo}
+
+\end{document}

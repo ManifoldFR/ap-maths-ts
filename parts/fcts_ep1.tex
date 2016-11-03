@@ -1,0 +1,324 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+\onlyinsubfile{
+    \begin{center}
+    {\LARGE \textsc{Compléments:\\ Fonctions de la variable réelle, épisode 1}}
+    \end{center}
+}
+
+    Dans ce cours, nous approfondirons les notions sur les fonctions de la variable réelle: limites, continuité, dérivabilité. On passera en revue des notions sur l'ensemble $\R$ des nombres réels, avant de voir quelques résultats sur les limites et les fonctions continues.
+
+
+\section{Topologie de $\R$}
+
+\subsection{Borne supérieure}
+
+\begin{mydef}[Borne supérieure]\label{defsup}
+    Soit $X$ une partie de $\R$. On appelle \textit{borne supérieure de $X$}, et on note $\sup X$, le plus petit majorant de $X$, s'il existe. La borne supérieure est caractérisée par les deux propriétés suivantes: $\alpha$ est la borne supérieure de $X$ si et seulement si :\begin{enumerate}
+        \item c'est un majorant de $X$: pour tout $x$ de $X$, $x\leq \alpha$.
+        \item pour tout majorant $M$ de $X$, on a $\sup X\leq M$.
+    \end{enumerate}
+\end{mydef}
+
+\begin{thm}[dit de la borne supérieure]
+    Toute partie \textbf{non vide} de $\R$ admettant un majorant admet une borne supérieure.
+\end{thm}
+
+\begin{exo}[F]
+    Déterminer les bornes supérieures des ensembles suivants:
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item $\R$
+        \item $[0,1[$
+        \item $\{n\in\Z,\ n\text{ est pair}\}$
+        \item $]-\infty, 0]$
+        \item $\varnothing$
+        \item $\left\{1-\dfrac{1}{n},\ n\in\N^*\right\}$
+    \end{enumerate}
+    \end{multicols}
+\end{exo}
+
+\begin{prop}[Autre caractérisation de la borne supérieure] \label{caractsup}
+    La propriété 2 de la définition \ref{defsup} de la borne supérieure peut être remplacée par l'énoncé suivant:
+    
+    \textup{pour tout $\epsilon > 0$, il existe $x\in X$ tel que $x>\alpha - \epsilon$.}
+\end{prop}
+
+\begin{cor}
+    Soit $A\subset\R$, non vide et majoré, et $\alpha \coloneqq \sup X$. Alors, il existe une suite $(u_n)$ à valeurs dans $X$ et croissante telle que $u_n\longrightarrow \alpha$.
+\end{cor}
+
+\begin{rem}
+	La réciproque est fausse.
+\end{rem}
+
+\begin{exo}[M]
+    Démontrer la proposition \ref{caractsup} et son corollaire.
+\end{exo}
+
+\begin{mydef}[Borne inférieure]\label{definf}
+	On définit de même la \textit{borne inférieure} d'une partie $X$ de $\R$, notée $\inf X$, comme le plus grand de ses minorants, s'il existe. Elle est caractérisée de la même façon: un réel $\alpha$ est la borne inférieure de $X$ si et seulement si:\begin{enumerate}
+		\item c'est un minorant de $X$ : pour tout $x\in X$, $\alpha \leq x$.
+		\item pour tout minorant $m$ de $X$, on a $m\leq\inf X$.
+	\end{enumerate}
+	et la deuxième condition équivaut à : pour tout $\epsilon>0$, il existe $x\in X$ tel que $x<\alpha + \epsilon$.
+\end{mydef}
+
+On a de même l'existence d'une suite $(u_n)$ décroissante à valeurs dans $X$ telle que $u_n\longrightarrow \alpha$.
+
+\subsection{Parties ouvertes et fermées de $\R$}
+
+\begin{mydef}[Ouvert]
+	Soit $U\subset\R$. On dit $U$ est \textit{ouvert} si pour tout $x\in U$, il existe $\epsilon > 0$ tel que ${]x-\epsilon,x+\epsilon[}\subset U$.
+\end{mydef}
+
+\begin{prop}\leavevmode
+	\begin{itemize}
+		\item Une réunion quelconque d'ouverts est un ouvert.
+		\item Une intersection \textbf{finie} d'ouverts est un ouvert.
+	\end{itemize}
+\end{prop}
+
+\begin{exo}[M]
+	Le démontrer. Trouver un contre-exemple pour une intersection \textit{infinie} d'ouverts.
+\end{exo}
+
+\begin{exe}
+	\begin{multicols}{2}
+		\begin{enumerate}
+			\item $\R$
+			\item $\varnothing$
+			\item $]0,1[$
+			\item $]a,+\infty[$ où $a\in\R$
+			\item $\R^*$
+			\item ${]-2,-1[}\cup{]0,1[}$
+		\end{enumerate}
+	\end{multicols}
+\end{exe}
+
+\begin{mydef}[Fermé]
+	Soit $F\subset\R$. On dit que $F$ est \textit{fermé} si son complémentaire $\R/F$ est un ouvert de $\R$.
+\end{mydef}
+
+\begin{prop}\leavevmode
+	\begin{itemize}
+		\item Une intersection quelconque de fermés est un fermé.
+		\item Une réunion \textbf{finie} de fermés est un fermé.
+	\end{itemize}
+\end{prop}
+
+\begin{exo}[M]
+	Le démontrer. Trouver un contre-exemple pour une réunion \textit{infinie} de fermés.
+\end{exo}
+
+\begin{exe}
+	\begin{multicols}{2}
+		\begin{enumerate}
+			\item $\R$
+			\item $\varnothing$
+			\item $[0,+\infty[$
+			\item $[0,1]$
+			\item $\{0\} $
+			\item L'ensemble des entiers pairs.
+		\end{enumerate}
+	\end{multicols}
+\end{exe}
+
+\begin{exo}[M]
+	Montrer qu'une partie $F\subset\R$ est fermée si et seulement si pour toute suite $(u_n)$ d'éléments de $F$ convergeant vers un réel $\ell$, on a $\ell\in F$.
+\end{exo}
+
+\begin{mydef}[Point adhérent]
+	Soit $X\subset\R$. On dit que $x\in\R$ est \textit{adhérent à $X$} s'il existe une suite $(u_n)$ de $X$ telle que $u_n\longrightarrow x$.
+\end{mydef}
+
+\begin{mydef}[Adhérence]
+	On appelle \textit{adhérence} de la partie $X$ de $\R$, et on note $\overline{X}$ l'ensemble de ses points adhérents.
+\end{mydef}
+
+\begin{prop}\label{sader}
+	Soient $X,Y\subset\R$. Alors:\begin{itemize}
+		\item $X\subset\overline{X}$
+		\item $X\subset Y\Longrightarrow \overline{X}\subset\overline{Y}$
+		\item $\overline{X\cap Y}\subset \overline{X}\cap\overline{Y}$
+		\item $\overline{X\cup Y} = \overline{X}\cup\overline{Y}$
+	\end{itemize}
+\end{prop}
+
+\begin{exo}[M]
+	Démontrer la proposition \ref{sader}.
+\end{exo}
+
+
+\subsection{Intervalles de $\R$}
+
+\begin{mydef}[Segment]
+    Soient $a$ et $b$ deux réels. On appelle \textit{segment d'extrémités $a$ et $b$}, et on note $[a,b]$, la partie de $\R$ définie par:
+    \[
+    [a,b] \coloneqq \{(1-t)a+tb,\quad t\in[0,1] \}.
+    \]
+\end{mydef}
+
+\begin{exo}[F]
+    On suppose que $a\leq b$. Montrer que
+    \[
+    [a,b] = \{x\in\R,\quad a\leq x\leq b \}.
+    \]
+\end{exo}
+
+\begin{mydef}[Intervalle]
+    On appelle \textit{intervalle} toute partie $I$ de $\R$ telle que pour tous $a,b\in I$, $[a,b]\subset I$. En d'autres termes, si on prend deux points de $I$, le segment entre les deux est toujours dans $I$.
+\end{mydef}
+
+\begin{prop}[Inventaire des intervalles de $\R$]
+    Le tableau suivant décrit l'ensemble des intervalles de $\R$.
+    \begin{center}
+    \begin{tabular}{|c|c|} \hline
+        Borné & Non borné \\ \hline
+        $\varnothing$ & $\R$ \\ \hline
+        Intervalle semi-ouvert $]a,b]$ ou $[a,b[$ & \\ \hline
+        Segment $[a,b]$ & $]-\infty,b]$ et $[a,+\infty[$ \\ \hline
+        Intervalle ouvert $]a,b[$ & $]a,+\infty[$ et $]-\infty,b[$ \\ \hline
+    \end{tabular}
+    \end{center}
+\end{prop}
+
+\begin{comment}
+\subsection{Densité d'une partie de $\R$}
+
+\begin{mydef}[Densité]
+    On dit que $A$ est dense dans $\R$ si pour tous réels $x$ et $y$ il existe un $a\in A\cap {]x,y[}$.
+\end{mydef}
+
+\begin{thm}[Propriété d'archimède]
+    Soient $x<y$ deux réels avec $x>0$. Alors il existe $n\in\N$ tel que $y\leq nx$.
+\end{thm}
+
+\begin{prop}
+    L'ensemble $\Q$ des nombres rationnels est dense dans $\R$.
+\end{prop}
+
+\begin{exo}[D]
+    Le démontrer.
+\end{exo}
+\end{comment}
+
+\subsection{Théorème de Bolzano-Weierstrass}
+
+\begin{mydef}[Extractrice]
+	On appelle \textit{extractrice} toute application $\phi:\N\longrightarrow\N$ strictement croissante.
+\end{mydef}
+
+\begin{mydef}[Sous-suite]
+	Soit $u$ une suite réelle. On dit que $v$ est une \textit{sous-suite de $u$} s'il existe une extractrice $\phi$ telle que $v_n=u_{\phi(n)}$ pour tout $n\in\N$.
+\end{mydef}
+
+\begin{exe}
+	La suite $\left(\frac{1}{2n}\right)$ est une sous-suite de $\left(\frac{1}{n}\right)$ d'extractrice $n\mapsto 2n$.
+\end{exe}
+
+\begin{lem}[dit des pics]
+	De toute suite réelle on peut extraire une sous-suite monotone.
+\end{lem}
+
+\begin{exo}[Démonstration, D]
+	Soit $u$ une suite réelle. On considère 
+	\[A\coloneqq \{n\in\N\quad \exists k>n\quad u_k\leq u_n\}.\]
+	\begin{enumerate}
+		\item On suppose que $A$ est infini. Construire par récurrence une suite d'entiers $(\phi(n))$ strictement croissante telle que $(u_{\phi(n)})$ soit croissante.
+		\item On suppose au contraire que $A$ est fini. En considérant son complémentaire, construire une suite d'entiers $(\phi(n))$ strictement croissante telle que $(u_{\phi(n)})$ soit décroissante.
+	\end{enumerate}
+\end{exo}
+
+\begin{thm}[dit de Bolzano-Weierstrass]
+	De toute suite réelle bornée on peut extraire une sous-suite qui converge.
+\end{thm}
+
+\begin{proof}
+	Appliquer successivement le lemme des pics et le théorème de la limite monotone.
+\end{proof}
+
+
+\section{Limites, continuité}
+
+\subsection{Définitions}
+
+On commence par donner une caractérisation de la convergence d'une fonction en un point, qui sera très commode à utiliser. Dans toute la suite, $f$ est une fonction $A\subset\R\rightarrow\R$.
+
+\begin{prop}\label{caractCVfct}
+    Soient $a\in\bar{A}$ et $\ell\in\overline{\R}$. Alors s'équivalent:
+    \begin{enumerate}
+        \item $f(x)\xrightarrow[x\to a]{}\ell$
+        \item pour toute suite $(x_n)$ à valeurs dans $A$ telle que $x_n\longrightarrow a$, on a $f(x_n)\longrightarrow \ell$.
+    \end{enumerate}
+\end{prop}
+
+Ainsi, une fonction est continue en un point $a\in A$ si et seulement si pour toute suite $(x_n)$ de $A$ telle que $x_n\longrightarrow a$, on a $f(x_n)\longrightarrow f(a)$.
+
+\subsection{Théorème des valeurs intermédiaires}
+
+\begin{thm}[dit des valeurs intermédiaires]
+    Soient $a<b$ dans $\R$ et $f$ une fonction continue de $[a,b]$ dans $\R$. On suppose que $f(a)<0$ et $f(b)>0$. Alors il existe $c\in{]a,b[}$ tel que $f(c)=0$.
+\end{thm}
+
+\begin{exo}[Démonstration, D]
+	Démontrer le théorème en considérant l'ensemble $X$ des points $x\in[a,b]$ tels que $f(x)\leq 0$. On pourra remarquer qu'il est non vide puisque $f(a)<0$ et majoré par $b$.
+\end{exo}
+
+\begin{exo}[M]\leavevmode
+	\begin{enumerate}
+		\item Soit $f$ une fonction continue sur un intervalle $I$. Soient $a<b\in I$, et $k\in\R$. On suppose que $f(a)<k<f(b)$. Montrer qu'il existe $c\in{]a,b[}$ tel que $f(c)=k$.
+		\item Montrer que $f(I)$ est un intervalle.
+	\end{enumerate}
+\end{exo}
+
+\begin{exo}[M]
+	Soit $f:[a,b]\longrightarrow[a,b]$ continue. Montrer qu'il existe $c\in[a,b]$ tel que $f(c)=c$ (on appelle un tel $c$ un \textit{point fixe} de $f$).\\
+	\textit{Indication:} Considérer $g:x\longmapsto f(x)-x$.
+\end{exo}
+
+\subsection{Théorème de compacité}
+
+\begin{thm}
+	Soient $a<b$ dans $\R$ et $f:[a,b]\longrightarrow\R$ une fonction continue. Alors $f$ est bornée et admet un minimum et un maximum.
+\end{thm}
+
+\subsection{Fonctions lipschitziennes}
+
+\begin{mydef}[Fonction lipschitzienne]
+    On dit que $f$ est \textit{lipschitzienne} s'il existe $M\geq 0$ tel que
+    \[
+    \forall x,y\in A\quad
+    \abs{f(x)-f(y)}\leq M\abs{x-y}.
+    \]
+    Dans ce cas, $f$ est dite $M$-lipschitzienne.
+\end{mydef}
+
+\begin{prop}\label{lipcont}
+    Une fonction lipschitzienne est continue.
+\end{prop}
+
+\begin{exo}[M]\begin{enumerate}
+    \item Montrer la proposition \ref{lipcont}.
+    \item Montrer que la réciproque est fausse en considérant la fonction $x\mapsto \frac{1}{x}$ sur $]0,+\infty[$.
+\end{enumerate}
+\end{exo}
+
+\begin{exo}[Théorème du point fixe de Banach, D]
+    Soit $I$ un intervalle réel et $f:I\rightarrow\R$ une fonction $r$-lipschitzienne où $r\in{[0,1[}$. \begin{enumerate}
+        \item Montrer que si $f$ admet un point fixe, il est unique.
+		\item On suppose que $I=\R$. Montrer que $f$ admet bien un point fixe.\par
+		\textit{Indication:} Raisonner par l'absurde: si ce n'est pas le cas, la fonction continue $g:x\longmapsto f(x)-x$ ne s'annule pas sur $\R$, est de signe constant d'après le TVI.
+        \item Soit $u_0\in I$ et $(u_n)$ la suite récurrente de premier terme $u_0$ et de relation de récurrence $u_{n+1}=f(u_n)$. Montrer que $u_n\longrightarrow a$.\par
+        \textit{Indication:} Montrer par récurrence que $\forall n\in\N\ \abs{u_{n+1}-a}\leq r\abs{u_n-a}$.
+    \end{enumerate} 
+\end{exo}
+
+\begin{exo}[D]
+Soit $f:I\rightarrow\R$ admettant un point fixe $a$. On suppose que $f$ est dérivable en $a$ et que $\abs{f'(a)}<1$. Montrer qu'il existe $\delta>0$ tel que pour tout $u_0\in{]a-\delta,a+\delta[}\cap I$, la suite $u$ de premier terme $u_0$ et vérifiant $u_{n+1}=f(u_n)$ est bien définie et converge vers $a$.\\
+\textit{Indication:} Utiliser la définition de la dérivée pour montrer par récurrence que pour tout $n\in\N$, $\abs{u_{n+1}-a}\leq k\abs{u_n-a}$ pour un réel $k$ bien choisi.
+\end{exo}
+
+\end{document}
