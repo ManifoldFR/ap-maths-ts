@@ -74,15 +74,15 @@ Soit $(u_n)_{n\in\N}$ une suite arithmético-géométrique de paramètres $a$ et
     \quad u_{n+1} = f(u_n). \]
 \end{mydef}
 
-Ce type de problème rentre dans le domaine d'étude des \textit{systèmes dynamiques}, fondamental en mathématiques pures comme appliquées, en physique, en chimie, en biologie.
-
 \begin{exe}\label{réc1}
     La suite réelle définie par $u_0=2$ et $u_{n+1}=\frac{1}{2}{u_n}^2+u_n+1$ est une suite récurrente d'ordre un ; quelle est la fonction $f$ correspondante ?
 \end{exe}
 
-Pour des fonctions $f$ assez moches, il n'est pas possible d'obtenir une expression explicite de $u_n$ en fonction de $n$, même en utilisant des astuces classiques (par exemple composer par des fonctions usuelles bien choisies...). Et pourtant, des fonctions $f$ assez moches interviennent dans la plupart des systèmes dynamiques que l'on peut rencontrer.
+Ce type de problème rentre dans le domaine d'étude des \textit{systèmes dynamiques}, fondamental en mathématiques pures comme appliquées. Les systèmes dynamiques interviennent partout où l'on veut décrire l'évolution d'un paramètre dans le temps, dès que les valeurs successives de ce paramètre ont une dépendance entre elles.
 
-L'étude des solutions au problème $u_{n+1}=f(u_n)$ sera donc exclusivement \textit{qualitative}: déjà, vérifier la bonne définition de la suite à tout rang, voir si elle est monotone, si elle est bornée, si elle converge, et ce en fonction des valeurs de son premier terme $u_0$.
+Pour des fonctions $f$ assez moches, on ne peut pas exprimer $u_n$ en fonction de $n$, même en utilisant des astuces classiques (composer par des fonctions usuelles bien choisies...). Et pourtant, des fonctions $f$ plutôt moches interviennent dans la plupart des systèmes dynamiques étudiés.
+
+L'étude des solutions au problème $u_{n+1}=f(u_n)$ sera donc qualitative. Il faut vérifier la bonne définition de la suite à tout rang, voir si elle est monotone, si elle est bornée, si elle converge, quelle pourrait être sa limite, en discutant selon les valeurs de son premier terme $u_0$.
 
 \begin{rem}
     Il \textbf{faut} vérifier que la suite $(u_n)$ est bien définie, c'est-à-dire que $u_n\in A$ pour tout $n$. En effet pour $u_0=1$ et $f$ définie sur $[0,+\infty[$ par $f(x)=\sqrt{x}-1$, la suite de relation de récurrence $u_{n+1}=f(u_n)$ n'est pas définie à partir du rang 2...
@@ -102,7 +102,6 @@ En général, les deux méthodes suivantes permettent de traiter la plupart des 
 \begin{itemize}
     \item étudier le signe de $u_{n+1}-u_n=f(u_n)-u_n$, en étudiant celui de la fonction $g:x\mapsto f(x) - x$. 
     \item étudier les variations de $f$ : si $f$ est croissante sur $A$, on compare $u_0$ et $u_1$. Si on a $u_0\leq u_1=f(u_0)$, une récurrence donne $u_n\leq u_{n+1}=f(u_n)$ par croissance de $f$. Si on a $u_1\leq u_0$ alors par récurrence $u_{n+1}\leq u_n$.
-    \item si $f$ est décroissante, alors $f\circ f$ est croissante : on peut étudier séparément les deux sous-suites $(u_{2n})$ et $(u_{2n+1})$, qui sont vérifient la relation de récurrence $v_{n+1}=f\circ f(v_n)$...
 \end{itemize}
 Bien sûr, le sens de variation de $f$ ou le signe de $g$ peuvent changer sur $A$. Dans ce cas, il faut chercher un intervalle $I\subset A$ sur lequel $g$ est de signe constant ou $f$ ne change pas de sens de variation, et qui vérifierait $u_n\in I\quad \forall n\in\N$.
 
@@ -126,10 +125,6 @@ Bien sûr, le sens de variation de $f$ ou le signe de $g$ peuvent changer sur $A
 \end{exo}
 
 \begin{exo}[D]
-	Soit $u$ la suite récurrente définie par $u_0=1$ et $u_{n+1} = -{u_n}^2 + 2$. Montrer que $u$ est croissante. Étudier sa convergence.
-\end{exo}
-
-\begin{exo}[D]
 	On considère la suite $(u_n)$ de premier terme un entier $u_0\geq 2$ et vérifiant la relation de récurrence \[u_{n+1}=\frac{{u_n}^2+2}{2u_n}.\] 
 	\begin{enumerate}
 		\item Montrer par récurrence que c'est une suite de nombres rationnels.
@@ -140,11 +135,16 @@ Bien sûr, le sens de variation de $f$ ou le signe de $g$ peuvent changer sur $A
 \end{exo}
 
 
-\begin{exo}[TD]
+\begin{exo}[D]
 	Soit $f:x\in\R \longmapsto (x-1)^3$. On cherche à étudier les suites de la forme $u_{n+1}=f(u_n)$, où $u_0\leq 1$.\begin{enumerate}
 		\item Montrer que l'intervalle $]-\infty,1]$ est stable par $f$.
 		\item Étudier le signe de $g:x\longmapsto f(x)-x$ sur $\R$. En conclure que $(u_n)$ est strictement décroissante.
 		\item Montrer que $u_n\xrightarrow[n\to+\infty]{}-\infty$.
 	\end{enumerate}
 \end{exo}
+
+\begin{exo}[D]
+	Soit $u$ la suite récurrente définie par $u_0<2$ et $u_{n+1} = -({u_n}-2)^2 + 2$. Étudier sa convergence.
+\end{exo}
+
 \end{document}

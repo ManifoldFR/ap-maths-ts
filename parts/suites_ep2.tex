@@ -8,6 +8,41 @@
     \end{center}
 }
 
+\section{Sous-suites}
+
+\begin{mydef}[Extractrice]
+	On appelle \textit{extractrice} toute application $\phi:\N\longrightarrow\N$ strictement croissante.
+\end{mydef}
+
+\begin{mydef}[Sous-suite]
+	Soit $u$ une suite réelle. On dit que $v$ est une \textit{sous-suite de $u$} s'il existe une extractrice $\phi$ telle que $v_n=u_{\phi(n)}$ pour tout $n\in\N$.
+\end{mydef}
+
+\begin{exe}
+	La suite $\left(\frac{1}{2n}\right)$ est une sous-suite de $\left(\frac{1}{n}\right)$ d'extractrice $n\mapsto 2n$.
+\end{exe}
+
+\begin{lem}[dit des pics]
+	De toute suite réelle on peut extraire une sous-suite monotone.
+\end{lem}
+
+\begin{exo}[Démonstration, D]
+	Soit $u$ une suite réelle. On considère 
+	\[A\coloneqq \{n\in\N\quad \exists k>n\quad u_k\leq u_n\}.\]
+	\begin{enumerate}
+		\item On suppose que $A$ est infini. Construire par récurrence une suite d'entiers $(\phi(n))$ strictement croissante telle que $(u_{\phi(n)})$ soit croissante.
+		\item On suppose au contraire que $A$ est fini. En considérant son complémentaire, construire une suite d'entiers $(\phi(n))$ strictement croissante telle que $(u_{\phi(n)})$ soit décroissante.
+	\end{enumerate}
+\end{exo}
+
+\begin{thm}[dit de Bolzano-Weierstrass]
+	De toute suite réelle bornée on peut extraire une sous-suite qui converge.
+\end{thm}
+
+\begin{proof}
+	Appliquer successivement le lemme des pics et le théorème de la limite monotone.
+\end{proof}
+
 
 \section{Sommes}
 

@@ -169,7 +169,7 @@ convient.
 	\[
     p(x)y(x) = C,\ C\in\R
     \]
-soit $y(x) = \dfrac{C}{p(x)}=\dfrac{C}{e^{A(x)}}$, i.e. :
+soit $y(x) = \dfrac{C}{p(x)}=\dfrac{C}{e^{-A(x)}}$, i.e. :
 	\[
 	y(x) = Ce^{A(x)}.\qedhere
 	\]
@@ -256,7 +256,7 @@ On admettra le théorème suivant, qui se démontre en Maths Spé' ou en deuxiè
 			\[
 			x\in\R\longmapsto Ae^{r_1x} + Be^{r_2x},\quad A,B\in\R.
 			\]
-		\item Dans le cas $\Delta<0$, les deux racines de l'équation caractéristique sont complexes conjuguées et s'écrivent $r_1=\alpha- i\omega$ et $_2=\alpha+i\omega$ avec $\alpha,\omega\in\R$. Les solutions de \eqref{ord2Hom} s'expriment sous la forme
+		\item Dans le cas $\Delta<0$, les deux racines de l'équation caractéristique sont complexes conjuguées et s'écrivent $r_1=\alpha- i\omega$ et $r_2=\alpha+i\omega$ avec $\alpha,\omega\in\R$. Les solutions de \eqref{ord2Hom} s'expriment sous la forme
 			\[
 			x\longmapsto e^{\alpha x}(A\cos(\omega x)+B\sin(\omega x)),\quad A,B\in\R.
 			\]
@@ -275,9 +275,9 @@ On admettra le théorème suivant, qui se démontre en Maths Spé' ou en deuxiè
 
 Comme au premier ordre, les solutions générales de l'équation différentielle \eqref{ord2Lin} s'écriront sous la forme $y_p+z$, où $z$ est solution de \eqref{ord2Hom} et $y_p$ est une solution particulière.
 
-Le problème, c'est trouver une solution particulière. Il existe une méthode de variation de la constante, mais elle est bien plus compliquée à mettre en œuvre qu'au premier ordre. On va se contenter de donner quelques méthodes quand on est confronté à des second membres particuliers.
+Le problème, c'est trouver une solution particulière. Il existe une méthode de variation de la constante, mais elle est bien plus compliquée à mettre en œuvre qu'au premier ordre. On s'en remettra donc au principe suivant:
 
-En général, on essaie de chercher une solution qui à la même tête que le second membre.
+\textit{En général, on essaie de chercher une solution qui à la même tête que le second membre.}
 
 \subsection{Exercices}
 
@@ -315,7 +315,7 @@ En général, on essaie de chercher une solution qui à la même tête que le se
 \end{exo}
 \section{Intégration numérique d'équations différentielles}
 
-Des fois, on veut avoir l'allure d'une solution exacte d'une équation différentielle, mais on ne sait pas la résoudre, ou la solution est trop complexe pour la tracer. 
+Des fois, on veut avoir l'allure d'une solution exacte d'une équation différentielle, mais on ne sait pas la résoudre, ou la solution est trop complexe pour être tracée. 
 
 \subsection{Principe}
 

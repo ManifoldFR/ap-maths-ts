@@ -15,6 +15,17 @@
 
 \subsection{Borne supérieure}
 
+\begin{mydef}[Majorant, minorant]
+Soit $X$ une partie de $\R$. On dit que $X$ est\begin{enumerate}
+\item \textit{majorée} s'il existe un réel $M$ tel que pour tout $x\in X$, $x\leq M$ ; un tel $M$ est alors appelé \textit{majorant de $X$}
+\item \textit{minorée} s'il existe un réel $m$ tel que pour tout $x\in X$, $m \leq x$ ; un tel $m$ est alors appelé \textit{minorant de $X$}.
+\end{enumerate}
+\end{mydef}
+
+\begin{rem}
+S'il existe un minorant ou un majorant, celui-ci n'est \textbf{jamais} unique : en effet, si $M$ est un majorant, $M+1$ aussi, si $m$ est un minorant, $m-1$ aussi...
+\end{rem}
+
 \begin{mydef}[Borne supérieure]\label{defsup}
     Soit $X$ une partie de $\R$. On appelle \textit{borne supérieure de $X$}, et on note $\sup X$, le plus petit majorant de $X$, s'il existe. La borne supérieure est caractérisée par les deux propriétés suivantes: $\alpha$ est la borne supérieure de $X$ si et seulement si :\begin{enumerate}
         \item c'est un majorant de $X$: pour tout $x$ de $X$, $x\leq \alpha$.
@@ -23,7 +34,7 @@
 \end{mydef}
 
 \begin{thm}[dit de la borne supérieure]
-    Toute partie \textbf{non vide} de $\R$ admettant un majorant admet une borne supérieure.
+    Toute partie \textbf{non vide} et \textbf{majorée} de $\R$ admet une borne supérieure.
 \end{thm}
 
 \begin{exo}[F]
@@ -41,13 +52,13 @@
 \end{exo}
 
 \begin{prop}[Autre caractérisation de la borne supérieure] \label{caractsup}
-    La propriété 2 de la définition \ref{defsup} de la borne supérieure peut être remplacée par l'énoncé suivant:
+    La propriété 2 de la définition \ref{defsup} peut être remplacée par l'énoncé suivant:
     
     \textup{pour tout $\epsilon > 0$, il existe $x\in X$ tel que $x>\alpha - \epsilon$.}
 \end{prop}
 
 \begin{cor}
-    Soit $A\subset\R$, non vide et majoré, et $\alpha \coloneqq \sup X$. Alors, il existe une suite $(u_n)$ à valeurs dans $X$ et croissante telle que $u_n\longrightarrow \alpha$.
+    Soit $A\subset\R$, non vide et majoré, et $\alpha \coloneqq \sup X$. Alors, il existe une suite $(u_n)$ à valeurs dans $X$ et croissante telle que $u_n\xrightarrow[n\to+\infty]{}\alpha$.
 \end{cor}
 
 \begin{rem}
@@ -113,7 +124,7 @@ On a de même l'existence d'une suite $(u_n)$ décroissante à valeurs dans $X$ 
 	Le démontrer. Trouver un contre-exemple pour une réunion \textit{infinie} de fermés.
 \end{exo}
 
-\begin{exe}
+\begin{exe}\leavevmode
 	\begin{multicols}{2}
 		\begin{enumerate}
 			\item $\R$
@@ -205,42 +216,6 @@ On a de même l'existence d'une suite $(u_n)$ décroissante à valeurs dans $X$ 
 \end{exo}
 \end{comment}
 
-\subsection{Théorème de Bolzano-Weierstrass}
-
-\begin{mydef}[Extractrice]
-	On appelle \textit{extractrice} toute application $\phi:\N\longrightarrow\N$ strictement croissante.
-\end{mydef}
-
-\begin{mydef}[Sous-suite]
-	Soit $u$ une suite réelle. On dit que $v$ est une \textit{sous-suite de $u$} s'il existe une extractrice $\phi$ telle que $v_n=u_{\phi(n)}$ pour tout $n\in\N$.
-\end{mydef}
-
-\begin{exe}
-	La suite $\left(\frac{1}{2n}\right)$ est une sous-suite de $\left(\frac{1}{n}\right)$ d'extractrice $n\mapsto 2n$.
-\end{exe}
-
-\begin{lem}[dit des pics]
-	De toute suite réelle on peut extraire une sous-suite monotone.
-\end{lem}
-
-\begin{exo}[Démonstration, D]
-	Soit $u$ une suite réelle. On considère 
-	\[A\coloneqq \{n\in\N\quad \exists k>n\quad u_k\leq u_n\}.\]
-	\begin{enumerate}
-		\item On suppose que $A$ est infini. Construire par récurrence une suite d'entiers $(\phi(n))$ strictement croissante telle que $(u_{\phi(n)})$ soit croissante.
-		\item On suppose au contraire que $A$ est fini. En considérant son complémentaire, construire une suite d'entiers $(\phi(n))$ strictement croissante telle que $(u_{\phi(n)})$ soit décroissante.
-	\end{enumerate}
-\end{exo}
-
-\begin{thm}[dit de Bolzano-Weierstrass]
-	De toute suite réelle bornée on peut extraire une sous-suite qui converge.
-\end{thm}
-
-\begin{proof}
-	Appliquer successivement le lemme des pics et le théorème de la limite monotone.
-\end{proof}
-
-
 \section{Limites, continuité}
 
 \subsection{Définitions}
@@ -285,6 +260,28 @@ Ainsi, une fonction est continue en un point $a\in A$ si et seulement si pour to
 	Soient $a<b$ dans $\R$ et $f:[a,b]\longrightarrow\R$ une fonction continue. Alors $f$ est bornée et admet un minimum et un maximum.
 \end{thm}
 
+\subsection{Théorème de la bijection continue}
+
+\begin{mydef}
+Soient $A$ et $B$ deux parties de $\R$. On dit qu'une fonction $f:A\longrightarrow B$ est une \textit{bijection} de $A$ vers $B$ (ou qu'elle est \textit{bijective}) si pour tout $y\in B$, il existe un et \textbf{un seul} $x\in A$ tel que $y=f(x)$.
+
+En d'autre termes, pour tout $y$ de $B$, l'équation $y=f(x)$ n'a qu'une seule solution.
+
+Dans ce cas, il existe une fonction $f^{-1}:B\longrightarrow A$, appelée \textit{réciproque} de $f$, telle que pour tout $x\in A$ et $y\in B$, $y=f(x) \Longleftrightarrow x = f^{-1}(y)$.
+\end{mydef}
+
+\begin{thm}
+Soit $I$ un intervalle réel et $f:I\longrightarrow\R$ continue. Si de plus $f$ est strictement monotone, alors $f$ établit une bijection de $I$ vers $f(I)$. De plus, sa réciproque $f^{-1}$ est continue sur $f(I)$.
+\end{thm}
+
+\begin{exo}[M]
+Montrer que pour tout $x>0$, il existe un unique réel $>0$, noté $g(x)$, tel que
+\[
+g(x)e^{g(x)} = x,
+\]
+et que la fonction $g:{]0,+\infty[}\longrightarrow{]0,+\infty[}$ ainsi définie est continue.
+\end{exo}
+
 \subsection{Fonctions lipschitziennes}
 
 \begin{mydef}[Fonction lipschitzienne]
@@ -310,15 +307,58 @@ Ainsi, une fonction est continue en un point $a\in A$ si et seulement si pour to
     Soit $I$ un intervalle réel et $f:I\rightarrow\R$ une fonction $r$-lipschitzienne où $r\in{[0,1[}$. \begin{enumerate}
         \item Montrer que si $f$ admet un point fixe, il est unique.
 		\item On suppose que $I=\R$. Montrer que $f$ admet bien un point fixe.\par
-		\textit{Indication:} Raisonner par l'absurde: si ce n'est pas le cas, la fonction continue $g:x\longmapsto f(x)-x$ ne s'annule pas sur $\R$, est de signe constant d'après le TVI.
+		\textit{Indication:} Raisonner par l'absurde: si ce n'est pas le cas, la fonction continue $g:x\longmapsto f(x)-x$ ne s'annule pas sur $\R$.
         \item Soit $u_0\in I$ et $(u_n)$ la suite récurrente de premier terme $u_0$ et de relation de récurrence $u_{n+1}=f(u_n)$. Montrer que $u_n\longrightarrow a$.\par
-        \textit{Indication:} Montrer par récurrence que $\forall n\in\N\ \abs{u_{n+1}-a}\leq r\abs{u_n-a}$.
+        \textit{Indication:} Montrer par récurrence que $\forall n\in\N$, $\abs{u_{n+1}-a}\leq r\abs{u_n-a}$.
     \end{enumerate} 
 \end{exo}
 
-\begin{exo}[D]
+\begin{exo}[TD]
 Soit $f:I\rightarrow\R$ admettant un point fixe $a$. On suppose que $f$ est dérivable en $a$ et que $\abs{f'(a)}<1$. Montrer qu'il existe $\delta>0$ tel que pour tout $u_0\in{]a-\delta,a+\delta[}\cap I$, la suite $u$ de premier terme $u_0$ et vérifiant $u_{n+1}=f(u_n)$ est bien définie et converge vers $a$.\\
-\textit{Indication:} Utiliser la définition de la dérivée pour montrer par récurrence que pour tout $n\in\N$, $\abs{u_{n+1}-a}\leq k\abs{u_n-a}$ pour un réel $k$ bien choisi.
+\textit{Indication:} Utiliser la définition de la dérivée pour montrer qu'il existe un réel $k>0$ tel que pour tout $n\in\N$, $\abs{u_{n+1}-a}\leq k\abs{u_n-a}$
+\end{exo}
+
+\section{Dérivabilité}
+
+\subsection{Théorème de Rolle}
+
+\begin{thm}[de Rolle]
+Soit $f$ une fonction continue sur un segment $[a,b]$, dérivable sur son intérieur $]a,b[$. On suppose que $f(a)=f(b)$. Alors, il existe $c\in{]a,b[}$ tel que $f'(c) = 0$.
+\end{thm}
+
+\begin{exo}[Théorème de la moyenne de Cauchy, M]
+Soient $f$ et $g$ deux fonctions continues sur un segment $[a,b]$, dérivables sur $]a,b[$. Montrer qu'il existe $c\in{]a,b[}$ tel que 
+\[
+(f(b)-f(a))g'(c) - (g(b)-g(a))f'(c) = 0
+\]
+\textit{Indication:} Poser $h(x) = (f(b)-f(a))g(x) - (g(b)-g(a))f(x)$, montrer que $h$ est dérivable et s'annule sur $]a,b[$.
+\end{exo}
+
+\subsection{Théorème des accroissements finis}
+
+\begin{thm}
+Soit $f$ une fonction continue sur un segment $[a,b]$, dérivable sur son intérieur ${]a,b[}$. Alors il existe $c\in{]a,b[}$ tel que
+\[
+\frac{f(b)-f(a)}{b-a} = f'(c).
+\]
+
+Géométriquement, il existe une tangente parallèle à la corde entre $a$ et $b$.
+\end{thm}
+
+\begin{cor}[Inégalité des accroissements finis]
+Sous les mêmes hypothèses, on a, avec $m$ un minorant de $f'$ et $M$ un majorant de $f'$ sur $]a,b[$ :
+\[
+m(b-a) \leq f(b) - f(a) \leq M(b-a).
+\]
+
+En particulier, si $M$ est un majorant de $\abs{f'}$ sur $]a,b[$, on a
+\[
+\abs{f(b)-f(a)} \leq M\abs{b-a}.
+\]
+\end{cor}
+
+\begin{exo}[M]
+Soit $f$ une fonction dérivable sur un segment $[a,b]$. On suppose que $f'$ est continue sur $[a,b]$. Montrer que $f$ est lipschitzienne.
 \end{exo}
 
 \end{document}

@@ -1,10 +1,10 @@
 \documentclass[a4paper]{book}
 \usepackage{polyglossia}
 \usepackage{subfiles}
-\usepackage[inner=2.8cm,outer=4.8cm,twoside]{geometry}
+\usepackage[inner=5cm,outer=2.8cm,twoside]{geometry}
 \usepackage{amsmath,mathtools, amssymb, amsfonts, amsthm}
 \usepackage{titling}
-\usepackage{fancyhdr}
+%\usepackage{fancyhdr}
 \usepackage{multicol}
 \usepackage[shortlabels]{enumitem}
 \usepackage[hidelinks]{hyperref}
@@ -43,6 +43,7 @@
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
 \newcommand{\R}{\mathbb R}
+\newcommand{\Co}{\mathbb C}
 
 \DeclarePairedDelimiter\abs{\lvert}{\rvert}%
 \DeclarePairedDelimiter\norm{\lVert}{\rVert}%
@@ -66,22 +67,23 @@
 \author{}
 \postauthor{\par\end{center}}
 
-\renewcommand{\thechapter}{\Roman{chapter}}
-\renewcommand{\thesection}{\arabic{section}}
-\renewcommand{\theequation}{\arabic{equation}}
-\renewcommand{\thefigure}{\arabic{figure}}
+
 
 
 \newcommand{\onlyinsubfile}[1]{#1}
 \newcommand{\notinsubfile}[1]{}
 
-% Page style
-\pagestyle{fancy}
-\fancyhead{}
-\fancyhead[LO,RE]{\rightmark}
-\fancyhead[RO,LE]{\thepage}
-\fancyfoot{}
-\fancyfoot[LE]{\leftmark}
+% Header style
+%\pagestyle{fancy}
+%\fancyhead{}
+%\fancyhead[LO,RE]{\rightmark}
+%\fancyhead[RO,LE]{\thepage}
+%\fancyfoot{}
+%\fancyfoot[LE]{\leftmark}
+%\setlength{\headheight}{14pt}
+%\renewcommand{\footrulewidth}{0.4pt}
+
+% Structure numbering format
 
 \renewcommand{\chaptermark}[1]{
 	\markboth{
@@ -91,7 +93,10 @@
     }{}
     }
 
-\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\thechapter}{\Roman{chapter}}
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\theequation}{\arabic{equation}}
+\renewcommand{\thefigure}{\arabic{figure}}
 
 \begin{document}
 
