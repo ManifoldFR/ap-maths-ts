@@ -1,0 +1,385 @@
+PWD E:/Documents/LaTeX/appro-maths-ts
+INPUT C:/Users/Will/AppData/Local/MiKTeX/2.9/miktex/data/le/xetex/xelatex.fmt
+INPUT main.tex
+OUTPUT main.log
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/book.cls
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/book.cls
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/bk10.clo
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/bk10.clo
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/polyglossia/polyglossia.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/polyglossia/polyglossia.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/etoolbox/etoolbox.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/etoolbox/etoolbox.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/makecmds/makecmds.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/makecmds/makecmds.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/xkeyval/xkeyval.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/xkeyval/xkeyval.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/xkeyval/xkeyval.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/xkeyval/xkvutils.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/xkeyval/keyval.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/fontspec/fontspec.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/fontspec/fontspec.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/l3kernel/expl3.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/l3kernel/expl3.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/l3kernel/expl3-code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/l3kernel/expl3-code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/unicode-data/UnicodeData.txt
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/unicode-data/CaseFolding.txt
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/unicode-data/SpecialCasing.txt
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/l3kernel/l3xdvipdfmx.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/l3kernel/l3xdvipdfmx.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/l3packages/xparse/xparse.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/l3packages/xparse/xparse.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/fontspec/fontspec-xetex.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/fontspec/fontspec-xetex.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/fontspec/tuenc.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/fontenc.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/fontenc.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/euenc/eu1enc.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/euenc/eu1enc.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/euenc/eu1lmr.fd
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/euenc/eu1lmr.fd
+INPUT C:/Program Files/MiKTeX 2.9/tex/xelatex/xunicode/xunicode.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/xelatex/xunicode/xunicode.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/tipa/t3enc.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/euenc/eu1lmss.fd
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/euenc/eu1lmss.fd
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/graphicx.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/graphicx.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/graphics.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/graphics.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/trig.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/trig.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/00miktex/graphics.cfg
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/00miktex/graphics.cfg
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics-def/xetex.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics-def/xetex.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/fontspec/fontspec.cfg
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/fontspec/fontspec.cfg
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ifluatex.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ifluatex.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/ifxetex/ifxetex.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/ifxetex/ifxetex.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/subfiles/subfiles.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/subfiles/subfiles.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/tools/verbatim.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/tools/verbatim.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/geometry/geometry.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/geometry/geometry.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ifpdf.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ifpdf.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ifvtex.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ifvtex.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/xelatex/xetexconfig/geometry.cfg
+INPUT C:/Program Files/MiKTeX 2.9/tex/xelatex/xetexconfig/geometry.cfg
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsmath.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsmath.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amstext.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amstext.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsgen.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsgen.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsbsy.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsbsy.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsopn.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsopn.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/mathtools/mathtools.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/mathtools/mathtools.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/tools/calc.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/tools/calc.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/mathtools/mhsetup.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/mathtools/mhsetup.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsfonts/amssymb.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsfonts/amssymb.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsfonts/amsfonts.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsfonts/amsfonts.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amscls/amsthm.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amscls/amsthm.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/titling/titling.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/titling/titling.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/fancyhdr/fancyhdr.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/fancyhdr/fancyhdr.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/tools/multicol.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/tools/multicol.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/enumitem/enumitem.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/enumitem/enumitem.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/hyperref.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/hyperref.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/hobsub-generic.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/hobsub-generic.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/auxhook.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/auxhook.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/kvoptions.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/kvoptions.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/pd1enc.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/pd1enc.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/00miktex/hyperref.cfg
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/00miktex/hyperref.cfg
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/url/url.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/url/url.sty
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/zapfding/pzdr.tfm
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/hxetex.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/hxetex.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/puenc.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/puenc.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/stringenc.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/stringenc.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/rerunfilecheck.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/rerunfilecheck.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/minted/minted.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/minted/minted.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/fvextra/fvextra.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/fvextra/fvextra.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/ifthen.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/ifthen.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/fancyvrb/fancyvrb.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/fancyvrb/fancyvrb.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/upquote/upquote.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/upquote/upquote.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/textcomp.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/textcomp.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/ts1enc.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/ts1enc.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/lineno/lineno.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/lineno/lineno.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/euenc/eu1lmtt.fd
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/euenc/eu1lmtt.fd
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/float/float.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/float/float.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/tools/shellesc.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/tools/shellesc.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/tools/shellesc.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/ifplatform/ifplatform.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/ifplatform/ifplatform.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/catchfile.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/catchfile.sty
+INPUT nul:.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/xstring/xstring.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/xstring/xstring.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/xstring/xstring.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/framed/framed.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/framed/framed.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/comment/comment.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/comment/comment.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/import/import.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/import/import.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/polyglossia/gloss-french.ldf
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/polyglossia/gloss-french.ldf
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/polyglossia/gloss-french.ldf
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/xcolor/xcolor.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/xcolor/xcolor.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/00miktex/color.cfg
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/00miktex/color.cfg
+INPUT main.aex
+INPUT main.aex
+INPUT main.aux
+INPUT main.aux
+OUTPUT main.aux
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/tipa/t3cmr.fd
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/tipa/t3cmr.fd
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/ts1cmr.fd
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/ts1cmr.fd
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/nameref.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/nameref.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/gettitlestring.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/gettitlestring.sty
+INPUT main.out
+INPUT main.out
+INPUT main.out
+INPUT main.out
+OUTPUT main.out
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi12.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi12.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmex10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmex10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsfonts/umsa.fd
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsfonts/umsa.fd
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsfonts/umsb.fd
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsfonts/umsb.fd
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr17.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr12.tfm
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/se-ascii-print.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/se-ascii-print.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/se-ascii-print.def
+INPUT main.toc
+INPUT main.toc
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+OUTPUT main.toc
+INPUT parts/suites_ep1.tex
+INPUT parts/suites_ep1.tex
+INPUT parts/fcts_ep1.tex
+INPUT parts/fcts_ep1.tex
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi12.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmex10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr12.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi8.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi6.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy8.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy6.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr8.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr6.tfm
+INPUT parts/suites_ep2.tex
+INPUT parts/suites_ep2.tex
+INPUT parts/eqdiff.tex
+INPUT parts/eqdiff.tex
+OUTPUT main.pyg
+INPUT _minted-main/default-pyg-prefix.pygstyle
+INPUT _minted-main/default-pyg-prefix.pygstyle
+INPUT _minted-main/default-pyg-prefix.pygstyle
+INPUT _minted-main/default-pyg-prefix.pygstyle
+INPUT _minted-main/default.pygstyle
+INPUT _minted-main/default.pygstyle
+INPUT _minted-main/default.pygstyle
+INPUT _minted-main/default.pygstyle
+INPUT _minted-main/00E3520FFB1EC5334CF25159FD02925C4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/00E3520FFB1EC5334CF25159FD02925C4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/00E3520FFB1EC5334CF25159FD02925C4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/00E3520FFB1EC5334CF25159FD02925C4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+OUTPUT main.pyg
+INPUT _minted-main/CF1CE28957250280CCC796B16936ECDB4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/CF1CE28957250280CCC796B16936ECDB4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/CF1CE28957250280CCC796B16936ECDB4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/CF1CE28957250280CCC796B16936ECDB4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+OUTPUT main.pyg
+INPUT _minted-main/AF2F1F9437740D350345348CB663809C4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/AF2F1F9437740D350345348CB663809C4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/AF2F1F9437740D350345348CB663809C4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/AF2F1F9437740D350345348CB663809C4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+OUTPUT main.pyg
+INPUT _minted-main/3841822014F738222634F8040E3E5FEF4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/3841822014F738222634F8040E3E5FEF4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/3841822014F738222634F8040E3E5FEF4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/3841822014F738222634F8040E3E5FEF4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+OUTPUT main.pyg
+INPUT _minted-main/B7DC81435C01CFA4945CE9EB65F407FF4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/B7DC81435C01CFA4945CE9EB65F407FF4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/B7DC81435C01CFA4945CE9EB65F407FF4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/B7DC81435C01CFA4945CE9EB65F407FF4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+OUTPUT main.pyg
+INPUT _minted-main/C3615BB66319519945D69D2340CE35144FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/C3615BB66319519945D69D2340CE35144FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/C3615BB66319519945D69D2340CE35144FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/C3615BB66319519945D69D2340CE35144FBEEAFC55D0059826E664B9BBCF3721.pygtex
+OUTPUT main.pyg
+INPUT _minted-main/933222B19FF3E7EA5F65517EA1F7D57E4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/933222B19FF3E7EA5F65517EA1F7D57E4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/933222B19FF3E7EA5F65517EA1F7D57E4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/933222B19FF3E7EA5F65517EA1F7D57E4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+OUTPUT main.pyg
+INPUT _minted-main/C5053D4DA03789BFBC4BEE760FADE9364FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/C5053D4DA03789BFBC4BEE760FADE9364FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/C5053D4DA03789BFBC4BEE760FADE9364FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/C5053D4DA03789BFBC4BEE760FADE9364FBEEAFC55D0059826E664B9BBCF3721.pygtex
+OUTPUT main.pyg
+INPUT _minted-main/4DBA4AC2C00A8BA0F1D6EB96706C5BDD4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/4DBA4AC2C00A8BA0F1D6EB96706C5BDD4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/4DBA4AC2C00A8BA0F1D6EB96706C5BDD4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/4DBA4AC2C00A8BA0F1D6EB96706C5BDD4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+OUTPUT main.pyg
+INPUT _minted-main/B1E94D6638379254F8637C916798010B4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/B1E94D6638379254F8637C916798010B4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/B1E94D6638379254F8637C916798010B4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/B1E94D6638379254F8637C916798010B4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+OUTPUT main.pyg
+INPUT _minted-main/2E927FC51B20971CA406AECB238691644FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/2E927FC51B20971CA406AECB238691644FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/2E927FC51B20971CA406AECB238691644FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/2E927FC51B20971CA406AECB238691644FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT figures/figure_1.pdf
+OUTPUT main.pyg
+INPUT _minted-main/2C6EB8530DC169E3215A2AA36D2BBA5C4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/2C6EB8530DC169E3215A2AA36D2BBA5C4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/2C6EB8530DC169E3215A2AA36D2BBA5C4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/2C6EB8530DC169E3215A2AA36D2BBA5C4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+OUTPUT main.pyg
+INPUT _minted-main/C3615BB66319519945D69D2340CE35144FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/C3615BB66319519945D69D2340CE35144FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/C3615BB66319519945D69D2340CE35144FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/C3615BB66319519945D69D2340CE35144FBEEAFC55D0059826E664B9BBCF3721.pygtex
+OUTPUT main.pyg
+INPUT _minted-main/391459E5E30E9265E24A4A5CCB0FB75A4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/391459E5E30E9265E24A4A5CCB0FB75A4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/391459E5E30E9265E24A4A5CCB0FB75A4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/391459E5E30E9265E24A4A5CCB0FB75A4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+OUTPUT main.pyg
+INPUT _minted-main/1431F895F69779A9E44E211D65D8B5954FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/1431F895F69779A9E44E211D65D8B5954FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/1431F895F69779A9E44E211D65D8B5954FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/1431F895F69779A9E44E211D65D8B5954FBEEAFC55D0059826E664B9BBCF3721.pygtex
+OUTPUT main.pyg
+INPUT _minted-main/CF1CE28957250280CCC796B16936ECDB4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/CF1CE28957250280CCC796B16936ECDB4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/CF1CE28957250280CCC796B16936ECDB4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/CF1CE28957250280CCC796B16936ECDB4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+OUTPUT main.pyg
+INPUT _minted-main/2D59BBBFF86A959854798DC3E891E6F24FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/2D59BBBFF86A959854798DC3E891E6F24FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/2D59BBBFF86A959854798DC3E891E6F24FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/2D59BBBFF86A959854798DC3E891E6F24FBEEAFC55D0059826E664B9BBCF3721.pygtex
+OUTPUT main.pyg
+INPUT _minted-main/5A56A25FC7912A463B505E00DB012DCC4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/5A56A25FC7912A463B505E00DB012DCC4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/5A56A25FC7912A463B505E00DB012DCC4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/5A56A25FC7912A463B505E00DB012DCC4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+OUTPUT main.pyg
+INPUT _minted-main/3C888090902D57A9E7C55A33EE6F3EEC4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/3C888090902D57A9E7C55A33EE6F3EEC4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/3C888090902D57A9E7C55A33EE6F3EEC4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/3C888090902D57A9E7C55A33EE6F3EEC4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+OUTPUT main.pyg
+INPUT _minted-main/3F00CE28E88B326FFB356435F80193804FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/3F00CE28E88B326FFB356435F80193804FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/3F00CE28E88B326FFB356435F80193804FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/3F00CE28E88B326FFB356435F80193804FBEEAFC55D0059826E664B9BBCF3721.pygtex
+OUTPUT main.pyg
+INPUT _minted-main/AF2F1F9437740D350345348CB663809C4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/AF2F1F9437740D350345348CB663809C4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/AF2F1F9437740D350345348CB663809C4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/AF2F1F9437740D350345348CB663809C4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+OUTPUT main.pyg
+INPUT _minted-main/3841822014F738222634F8040E3E5FEF4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/3841822014F738222634F8040E3E5FEF4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/3841822014F738222634F8040E3E5FEF4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/3841822014F738222634F8040E3E5FEF4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+OUTPUT main.pyg
+INPUT _minted-main/37BE96BF9EA183A3040123FEECA18D494FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/37BE96BF9EA183A3040123FEECA18D494FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/37BE96BF9EA183A3040123FEECA18D494FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/37BE96BF9EA183A3040123FEECA18D494FBEEAFC55D0059826E664B9BBCF3721.pygtex
+OUTPUT main.pyg
+INPUT _minted-main/00E3520FFB1EC5334CF25159FD02925C4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/00E3520FFB1EC5334CF25159FD02925C4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/00E3520FFB1EC5334CF25159FD02925C4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/00E3520FFB1EC5334CF25159FD02925C4FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT figures/figure_2.pdf
+OUTPUT main.pyg
+INPUT _minted-main/CB78B02BE88E7CAEFAF3D2C4B0BCEA394FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/CB78B02BE88E7CAEFAF3D2C4B0BCEA394FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/CB78B02BE88E7CAEFAF3D2C4B0BCEA394FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT _minted-main/CB78B02BE88E7CAEFAF3D2C4B0BCEA394FBEEAFC55D0059826E664B9BBCF3721.pygtex
+INPUT main.aux
+INPUT main.pyg
