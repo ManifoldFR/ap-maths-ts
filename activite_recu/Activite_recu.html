@@ -11760,9 +11760,9 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Soit $f:[0,1]\longrightarrow \mathbb{R}$ définie pour tout $x\in[0,1]$ par $f(x) = \dfrac{1}{2}x(1-x)$.</p>
-<p>On se propose d'étudier le comportement des suites récurrentes de relation de récurrence $u_{n+1}=f(u_n)$.</p>
-<p>On étudiera d'abord la convergence de ces suites, en fonction de leur premier terme $u_0$, puis, en s'appuyant sur l'outil informatique, on regardera leur «comportement asymptotique», c'est-à-dire si elle s'approche d'une suite que l'on peut exprimer simplement.</p>
+<p>Soit $f:[0,1]\longrightarrow \mathbb{R}$ d??finie pour tout $x\in[0,1]$ par $f(x) = \dfrac{1}{2}x(1-x)$.</p>
+<p>On se propose d'??tudier le comportement des suites r??currentes de relation de r??currence $u_{n+1}=f(u_n)$.</p>
+<p>On ??tudiera d'abord la convergence de ces suites, en fonction de leur premier terme $u_0$, puis, en s'appuyant sur l'outil informatique, on regardera leur ??comportement asymptotique??, c'est-??-dire si elle s'approche d'une suite que l'on peut exprimer simplement.</p>
 
 </div>
 </div>
@@ -11781,10 +11781,10 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Soit $u_0\in[0,1]$, et $(u_n)$ la suite définie par $u_{n+1} = f(u_n)$ pour tout $n\in\mathbb{N}$.</p>
+<p>Soit $u_0\in[0,1]$, et $(u_n)$ la suite d??finie par $u_{n+1} = f(u_n)$ pour tout $n\in\mathbb{N}$.</p>
 <ul>
-<li>Établir le tableau de variation de la fonction $f$, en déduire que le segment $[0,1]$ est stable par $f$. En déduire que $(u_n)$ est bien définie, et bornée.</li>
-<li>En étudiant le signe de $g:x\longmapsto f(x)-x$, montrer que $(u_n)$ est monotone.</li>
+<li>??tablir le tableau de variation de la fonction $f$, en d??duire que le segment $[0,1]$ est stable par $f$. En d??duire que $(u_n)$ est bien d??finie, et born??e.</li>
+<li>En ??tudiant le signe de $g:x\longmapsto f(x)-x$, montrer que $(u_n)$ est monotone.</li>
 <li>Conclure que $(u_n)$</li>
 </ul>
 
@@ -11806,7 +11806,7 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>On s'appuiera ici sur l'utilisation du langage informatique Python pour analyser le comportement de $u_n$ pour $n$ grand.</p>
-<p>Tout d'abord, on importe dans l'instance Python démarrée les librairies de fonctions qui vont nous permettre, respectivement, de tracer des graphes (<code>matplotlib</code> et son module <code>matplotlib.pyplot</code>) et mener des calculs mathématiques (<code>numpy</code>):</p>
+<p>Tout d'abord, on importe dans l'instance Python d??marr??e les librairies de fonctions qui vont nous permettre, respectivement, de tracer des graphes (<code>matplotlib</code> et son module <code>matplotlib.pyplot</code>) et mener des calculs math??matiques (<code>numpy</code>):</p>
 
 </div>
 </div>
@@ -11835,8 +11835,8 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>NB: La dernière ligne sert à présenter les figures tracées juste après les blocks de code sur cette page.</em></p>
-<p>On peut maintenant définir la fonction $f$ de la relation de récurrence:</p>
+<p><em>NB: La derni??re ligne sert ?? pr??senter les figures trac??es juste apr??s les blocks de code sur cette page.</em></p>
+<p>On peut maintenant d??finir la fonction $f$ de la relation de r??currence:</p>
 
 </div>
 </div>
@@ -11887,7 +11887,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Et enfin construire une figure <code>fig</code> constituée de deux graphes <code>ax0</code> et <code>ax1</code>, respectivement les termes de la suite $u_n$ et ceux de la suite $2^nu_n$:</p>
+<p>Et enfin construire une figure <code>fig</code> constitu??e de deux graphes <code>ax0</code> et <code>ax1</code>, respectivement les termes de la suite $u_n$ et ceux de la suite $2^nu_n$:</p>
 
 </div>
 </div>
@@ -12353,7 +12353,7 @@ ERHJEWraIiIiOUJNW0REJEeoaYuIiOQINW0REZEc8f8BRZKuFVhXU1IAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Pour avoir une idée de vers quoi tend $2^nu_n$, on peut prendre les derniers termes calculés:</p>
+<p>Pour avoir une id??e de vers quoi tend $2^nu_n$, on peut prendre les derniers termes calcul??s:</p>
 
 </div>
 </div>
@@ -12401,7 +12401,7 @@ ERHJEWraIiIiOUJNW0REJEeoaYuIiOQINW0REZEc8f8BRZKuFVhXU1IAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Ainsi, on a que $2^nu_n \longrightarrow C$, où $C \approx 0.196$ à $10^{-3}$ près, d'où</p>
+<p>Ainsi, on a que $2^nu_n \longrightarrow C$, o?? $C \approx 0.196$ ?? $10^{-3}$ pr??s, d'o??</p>
 $$
 u_n \simeq \frac{0.196}{2^n}.
 $$
@@ -12422,11 +12422,11 @@ $$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>On s'intéresse ici aux suites vérifiant une relation de récurrence de la forme
+<p>On s'int??resse ici aux suites v??rifiant une relation de r??currence de la forme
 $$
 u_{n+1} = a\sin(u_n)
 $$
-où $a\in\mathbb R$ est fixé.</p>
+o?? $a\in\mathbb R$ est fix??.</p>
 
 </div>
 </div>
@@ -12436,7 +12436,7 @@ où $a\in\mathbb R$ est fixé.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>On propose le programme suivant : les deux variables <code>a</code> et <code>u0</code> peuvent être ajustées pour étudier le comportement de la suite.</p>
+<p>On propose le programme suivant : les deux variables <code>a</code> et <code>u0</code> peuvent ??tre ajust??es pour ??tudier le comportement de la suite.</p>
 
 </div>
 </div>
@@ -12446,7 +12446,7 @@ où $a\in\mathbb R$ est fixé.</p>
 <div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">###### Définition de f</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">###### D??finition de f</span>
 
 <span class="k">def</span> <span class="nf">plot_u</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">u0</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">F</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -12465,7 +12465,7 @@ où $a\in\mathbb R$ est fixé.</p>
     <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">U</span><span class="p">,</span> <span class="s1">&#39;r.:&#39;</span><span class="p">)</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">()</span>
 
-<span class="c1"># Éléments interactifs / sliders</span>
+<span class="c1"># ??l??ments interactifs / sliders</span>
 
 <span class="n">interact</span><span class="p">(</span><span class="n">plot_u</span><span class="p">,</span>
         <span class="n">a</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">FloatSlider</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="nb">min</span><span class="o">=-</span><span class="mf">4.</span><span class="p">,</span><span class="nb">max</span><span class="o">=</span><span class="mf">4.</span><span class="p">,</span><span class="n">step</span><span class="o">=</span><span class="mf">0.05</span><span class="p">),</span>
