@@ -8,7 +8,9 @@
 \usepackage{float}
 \usepackage{listings}
 \usepackage{graphicx}
-\usepackage{xcolor}
+\usepackage[usenames,dvipsnames,svgnames]{xcolor}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
 \usepackage{mdframed}
 \usepackage[hidelinks]{hyperref}
 \usepackage{caption,subcaption}
@@ -20,13 +22,6 @@
 
 \setdefaultlanguage{french}
 \frenchspacing
-
-%% Math fonts
-\usepackage{unicode-math}
-\setmathfont{Latin Modern Math}
-%\setmathfont{xits-math.otf}
-\setmathfont[range={\mathbb,\mathcal,\mathsf}]{xits-math.otf}
-%\setmathfont[range={\mathbb,\mathcal,\mathsf}]{STIXTwoMath.otf}
 
 \newcommand{\NN}{\mathbb N}
 \newcommand{\ZZ}{\mathbb Z}
@@ -204,6 +199,8 @@ On considère une grille $n\times n$, où $n\in\NN^*$ de points du plan $(k,\ell
 
 On étudie les chemins construits en faisant des pas vers la droite ou vers le haut, où chaque direction à une probabilité d'être choisie de $\frac 1 2$ à chaque étape. On appelle \textit{marche aléatoire} un tel chemin.
 
+On considère 
+
 Soit $X$ la variable aléatoire égale au nombre de déplacements vers la droite.
 
 \begin{enumerate}
@@ -215,20 +212,21 @@ Soit $X$ la variable aléatoire égale au nombre de déplacements vers la droite
 \exercice
 Soit $(\Omega,\mathcal A,\PP)$ un espace probabilisé (un ensemble muni d'une probabilité). Calculer $\PP(B)$:
 \begin{enumerate}
-\item Sachant que $\PP(A) = 1/3$ et $\PP_A(B) = 2/5$ et $\PP_{\bar A}(B)=1/4$.
+\item Sachant que $\PP(A) = 1/3$ et $\PP_A(B) = 2/5$ et $\PP_{\overline A}(B)=1/4$.
 \item Sachant que $\PP(A) = 2/3$, $\PP(A\cap B)=1/3$ et $\PP(\overline A\cap B) = 1/6$.
 \end{enumerate}
 
 
 \exercice
-Soit $\mathbb U_n$ l'ensemble des nombres complexes $a$ tels que $a^n=1$, où $n\geq 2$. On montre que ses éléments sont de la forme
+Pour tout entier naturel $n$ supérieur ou égal à 2, on note $\mathbb U_n$ l'ensemble des nombres complexes $a$ tels que $a^n=1$. On montre que ses éléments sont de la forme
 \[
-e^{\frac{2ik\pi}{n}},\ 1\leq k\leq n.
+\omega^k = e^{2ik\pi/n},\ 0\leq k\leq n-1,\ \text{où}\ \omega = e^{2i\pi/n}.
 \]
+
 
 \begin{figure}[H]
 	\centering
-\begin{subfigure}[b]{0.44\textwidth}
+\begin{subfigure}[b]{0.45\textwidth}
 	\centering
 	\resizebox{\linewidth}{!}{
 	\begin{tikzpicture}
@@ -237,12 +235,12 @@ e^{\frac{2ik\pi}{n}},\ 1\leq k\leq n.
 	\draw[thick,->] (-4,0) -- (4,0) node[pos=1,anchor=south east] {$x$};
 	\draw[thick,->] (0,-4) -- (0,4) node[pos=1,anchor=north west] {$y$};
 	
-	\path pic at (0,0) {mysymbol={5}};
+	\path pic at (0,0) {mysymbol={3}};
 	\end{tikzpicture}
 	}
-	\subcaption{$\mathbb U_5$.}
+	\subcaption{$\mathbb U_3$.}
 \end{subfigure}
-\begin{subfigure}[b]{0.44\textwidth}
+\begin{subfigure}[b]{0.45\textwidth}
 	\centering
 	\resizebox{\linewidth}{!}{
 	\begin{tikzpicture}
@@ -251,12 +249,12 @@ e^{\frac{2ik\pi}{n}},\ 1\leq k\leq n.
 		\draw[thick,->] (-4,0) -- (4,0) node[pos=1,anchor=south east] {$x$};
 		\draw[thick,->] (0,-4) -- (0,4) node[pos=1,anchor=north west] {$y$};
 		
-		\path pic at (0,0) {mysymbol={3}};
+		\path pic at (0,0) {mysymbol={5}};
 	\end{tikzpicture}
 	}
-	\subcaption{$\mathbb{U}_3$.}
+	\subcaption{$\mathbb{U}_5$.}
 \end{subfigure}
-\begin{subfigure}[b]{0.44\textwidth}
+\begin{subfigure}[b]{0.45\textwidth}
 	\centering
 	\resizebox{\linewidth}{!}{
 		\begin{tikzpicture}
@@ -270,9 +268,32 @@ e^{\frac{2ik\pi}{n}},\ 1\leq k\leq n.
 	}
 	\subcaption{$\mathbb{U}_{8}$.}
 \end{subfigure}
+\begin{subfigure}[b]{0.45\textwidth}
+	\centering
+	\resizebox{\linewidth}{!}{
+		\begin{tikzpicture}
+		\node[dot,label=above right:$O$] at (0,0) {};
+		
+		\draw[thick,->] (-4,0) -- (4,0) node[pos=1,anchor=south east] {$x$};
+		\draw[thick,->] (0,-4) -- (0,4) node[pos=1,anchor=north west] {$y$};
+		
+		\path pic at (0,0) {mysymbol={12}};
+		\end{tikzpicture}
+	}
+	\subcaption{$\mathbb{U}_{12}$.}
+\end{subfigure}
 \end{figure}
 
-On prend deux éléments $w$ et $z$ de $\mathbb U_n$ au hasard; on note $M_w$ et $M_z$ les points du plan complexe dont ils sont les affixes; quelle est la valeur moyenne de l'angle $\angle(M_wOM_z)$ ?
+On munit $\mathbb U_n$ de la mesure de probabilité uniforme $\PP$. Ainsi, pour tout $\omega\in\mathbb U_n$,
+\[ \PP(\{\omega\}) = \frac{1}{n}. \]
+
+\begin{enumerate}
+	\item On prend au hasard un élément $z$ de $\mathbb U_n$. Quelle est l'espérance mathématique de la variable aléatoire $Z$ égale à $z$ ?
+	\item Calculer l'espérance mathématique du module et de l'argument de $Z$.
+	\item On prend deux éléments $w$ et $z$ de $\mathbb U_n$ avec une probabilité uniforme; on note $M_w$ et $M_z$ les points du plan complexe dont ils sont les affixes.
+	Quelle est la valeur moyenne de l'angle $\angle(M_wOM_z)$ ?
+\end{enumerate}
+
 
 
 \exercice[Bordeaux 1980]
@@ -482,6 +503,67 @@ Résoudre cette équation pour:
 \end{enumerate}
 Dans chaque cas, on déterminera non seulement le couple de solutions $(x,y)$ mais aussi leur PGCD.
 
+\exercice[Un peu d'optique]
 
+Une lame à face parallèles, d'épaisseur $e$ et d'indice de réfraction $n > 1$ est éclairée par un rayon laser de longueur d'onde $\lambda$, en incidence normale.
+
+\begin{figure}
+	\centering
+	\begin{tikzpicture}[scale=1.5]
+	\tikzset{->-/.style={decoration={
+		markings,
+		mark=at position #1 with {\arrow[>=stealth]{>}}},postaction={decorate}}}
+	
+	\draw[draw=black!80,semithick,fill=gray!50] (-1.5,2) rectangle (0,-2);
+	\node[circle,draw=black,anchor=north west,minimum size=1pt,inner sep=1mm] at (-1.35,1.85) {$n$};
+	
+	\draw[->-=0.5,red,semithick] (-2.5,0.9) -- (-1.5,0.9) node[pos=0,anchor=south] {Laser};
+	
+	\def\cr{0.91}
+	
+	\pgfmathsetmacro{\mycol}{100}
+	\edef\mycol{red!\mycol}
+	\draw[->-=0.5,\mycol,semithick] (-1.5,0.9) -- (0,0.9);
+	
+	\pgfmathsetmacro{\mycol}{100*\cr^1}
+	\edef\mycol{red!\mycol}
+	\draw[->-=0.5,\mycol,semithick] (0,.9) -- (1,.9) node[pos=1,black,anchor=west] {$(1)$};
+	
+	\def\st{0.3}
+	
+	\foreach \z in {1,...,5} {
+		\def\alt{0.9+\st/2-\st*\z}
+		\pgfmathsetmacro{\mycol}{{100*\cr^\z}}
+		\edef\mycol{red!\mycol}
+		\draw[->-=0.5,\mycol,semithick] (0,\alt) -- (-1.5,\alt);
+		
+		\pgfmathsetmacro{\mycol}{{100*\cr^(\z+0.5)}}
+		\edef\mycol{red!\mycol}
+		\draw[->-=0.5,\mycol,semithick] (-1.5,{\alt-\st/2}) -- (0,{\alt-\st/2});
+		
+		\pgfmathtruncatemacro\result{\z + 1}
+		\draw[->-=0.5,\mycol,semithick] (0,{\alt-\st/2}) -- (1,{\alt-\st/2}) node[pos=1,black,anchor=west] {$(\result)$};
+	}
+	\end{tikzpicture}
+\end{figure}
+
+Le laser est une onde électromagnétique, dont l'amplitude et la phase sont représentées par un nombre complexe $A$, où
+\begin{equation*}
+	\left\{
+	\begin{array}{ll}
+	\abs{A} &\text{est l'amplitude de l'onde}\\
+	\arg(A) &\text{est la phase de l'onde}
+	\end{array}\right.
+\end{equation*}
+
+On suppose qu'à chaque fois que le rayon rencontre un dioptre (surface entre la lame et l'air) il est divisé en deux, entre un rayon transmis et un rayon réfléchi. L'amplitude de l'onde réfléchie est multipliée par un réel $0 < \rho < 1$.
+
+Au sein de la lame se produit une infinité de réflexions.
+
+\begin{enumerate}
+	\item Quelle est la différence de marche $\delta$ entre les rayons $(1)$ et $(2)$ ? On suppose qu'elle reste la même entre les rayons $(p)$ et $(p+1)$.
+	\item En déduire l'expression du déphasage $\phi = 2\pi\delta/\lambda$ entre deux rayons successifs.
+	\item Soit $p\geq 1$. Exprimer la relation entre $\arg(A_{p+1})$ et $\arg(A_p)$. Exprimer la relation entre $\abs{A_{p+1}}$ et $\abs{A_p}$.
+\end{enumerate}
 
 \end{document}
