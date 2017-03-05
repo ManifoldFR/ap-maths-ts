@@ -23,6 +23,8 @@
 \setdefaultlanguage{french}
 \frenchspacing
 
+\renewcommand{\phi}{\varphi}
+\renewcommand{\epsilon}{\varepsilon}
 \newcommand{\NN}{\mathbb N}
 \newcommand{\ZZ}{\mathbb Z}
 \newcommand{\RR}{\mathbb R}
@@ -94,6 +96,8 @@ u_0 & = 2\\
 u_{n+1} &= -2u_n+3
 \end{array}
 \]
+
+
 
 \begin{enumerate}
 \item On pose $v_n := u_n - 1$ pour tout $n\in\NN$.
@@ -416,8 +420,9 @@ Pour tout $k > 0$, on considère la fonction $f_k$ définie sur $]0,+\infty[$ pa
 On note $\mathcal{C}_k$ sa courbe représentative dans le plan muni d'un repère orthonormé $(O,\vec\imath,\vec{\jmath})$.
 \begin{enumerate}
 	\item Étudier les variations de $f_k$, dresser son tableau. On précisera les limites de $f_k$.
-	\item Soit $M_k$ le point $\mathcal{C}_k$ correspondant au minimum de $f_k$. Déterminer dans le repère $(O,\vec{\imath},\vec{\jmath})$ une équation cartésienne de l'ensemble $\mathcal{A}$ décrit par $M_k$ lorsque $k$ décrit $]0,+\infty[$.
-	\item Préciser la position relative de $\mathcal{C}_k$ et $\mathcal{A}$; les tracer. 
+	\item Soit $M_k$ le point $\mathcal{C}_k$ correspondant au minimum de $f_k$. Déterminer ses coordonnées.
+	\item Déterminer dans le repère $(O,\vec{\imath},\vec{\jmath})$ une équation cartésienne $y=g(x) $ vérifiée par l'ensemble $\mathcal{A}$ des points $M_k$, $k >0 $.
+	\item Préciser la position relative de $\mathcal{C}_k$ et $\mathcal{A}$. Tracer $\mathcal{C}_1$ et $\mathcal{A}$. 
 \end{enumerate}
 
 \exercice[Amérique du Nord 1986]
@@ -503,7 +508,7 @@ Résoudre cette équation pour:
 \end{enumerate}
 Dans chaque cas, on déterminera non seulement le couple de solutions $(x,y)$ mais aussi leur PGCD.
 
-\exercice[Un peu d'optique]
+\exercice[Un peu d'optique (D)]
 
 Une lame à face parallèles, d'épaisseur $e$ et d'indice de réfraction $n > 1$ est éclairée par un rayon laser de longueur d'onde $\lambda$, en incidence normale.
 
@@ -514,8 +519,8 @@ Une lame à face parallèles, d'épaisseur $e$ et d'indice de réfraction $n > 1
 		markings,
 		mark=at position #1 with {\arrow[>=stealth]{>}}},postaction={decorate}}}
 	
-	\draw[draw=black!80,semithick,fill=gray!50] (-1.5,2) rectangle (0,-2);
-	\node[circle,draw=black,anchor=north west,minimum size=1pt,inner sep=1mm] at (-1.35,1.85) {$n$};
+	\draw[draw=black!80,semithick,fill=gray!50] (-1.5,1.5) rectangle (0,-1) node[pos=0.003, anchor=south west] {Lame de verre};
+	\node[circle,draw=black,anchor=north west,minimum size=1pt,inner sep=1mm] at (-1.35,1.35) {$n$};
 	
 	\draw[->-=0.5,red,semithick] (-2.5,0.9) -- (-1.5,0.9) node[pos=0,anchor=south] {Laser};
 	
@@ -529,9 +534,9 @@ Une lame à face parallèles, d'épaisseur $e$ et d'indice de réfraction $n > 1
 	\edef\mycol{red!\mycol}
 	\draw[->-=0.5,\mycol,semithick] (0,.9) -- (1,.9) node[pos=1,black,anchor=west] {$(1)$};
 	
-	\def\st{0.3}
+	\def\st{0.26}
 	
-	\foreach \z in {1,...,5} {
+	\foreach \z in {1,...,6} {
 		\def\alt{0.9+\st/2-\st*\z}
 		\pgfmathsetmacro{\mycol}{{100*\cr^\z}}
 		\edef\mycol{red!\mycol}
@@ -547,23 +552,62 @@ Une lame à face parallèles, d'épaisseur $e$ et d'indice de réfraction $n > 1
 	\end{tikzpicture}
 \end{figure}
 
-Le laser est une onde électromagnétique, dont l'amplitude et la phase sont représentées par un nombre complexe $A$, où
+Le laser est une onde électromagnétique, dont l'amplitude et la phase sont représentées par un nombre complexe $A_0$, où
 \begin{equation*}
 	\left\{
 	\begin{array}{ll}
-	\abs{A} &\text{est l'amplitude de l'onde}\\
-	\arg(A) &\text{est la phase de l'onde}
+	\abs{A_0} &\text{est l'amplitude de l'onde}\\
+	\arg(A_0) &\text{est la phase de l'onde}
 	\end{array}\right.
 \end{equation*}
 
-On suppose qu'à chaque fois que le rayon rencontre un dioptre (surface entre la lame et l'air) il est divisé en deux, entre un rayon transmis et un rayon réfléchi. L'amplitude de l'onde réfléchie est multipliée par un réel $0 < \rho < 1$.
+On suppose qu'à chaque fois que le rayon rencontre la surface entre la lame et l'air, il est divisé en deux: un rayon transmis et un rayon réfléchi. 
 
-Au sein de la lame se produit une infinité de réflexions.
+Ainsi, le rayon entrant fait des allers-retours dans la lame, ricochant sur la surface verre/air en laissant passer à chaque fois une partie de la lumière.
+
+L'amplitude de l'onde réfléchie est multipliée par un réel $0 < r < 1$. L'amplitude de l'onde transmise est multipliée par un réel $0< t < 1$.
 
 \begin{enumerate}
-	\item Quelle est la différence de marche $\delta$ entre les rayons $(1)$ et $(2)$ ? On suppose qu'elle reste la même entre les rayons $(p)$ et $(p+1)$.
+	\item Quelle est la différence de marche $\delta$ entre deux rayons successifs ?
 	\item En déduire l'expression du déphasage $\phi = 2\pi\delta/\lambda$ entre deux rayons successifs.
-	\item Soit $p\geq 1$. Exprimer la relation entre $\arg(A_{p+1})$ et $\arg(A_p)$. Exprimer la relation entre $\abs{A_{p+1}}$ et $\abs{A_p}$.
+	\\
+	On admet alors que la relation entre les phases de deux rayons successifs $(p)$ et $(p+1)$ est
+	\[ \arg(A_{p+1}) = \arg(A_p) + \phi. \]
+	Exprimer $\arg(A_p)$ en fonction de $\phi$ et $p$.
+	\item Combien de réflexions le rayon $(p+1)$ subit-il par rapport au rayon $(p)$ ? En déduire une relation entre $\abs{A_{p+1}}$ et $\abs{A_p}$.
+	\item Exprimer $\abs{A_p}$ en fonction de $r$ et $p$.
+	\item En déduire l'expression de $A_p$ en fonction de $r$, $\phi$ et $p$.
+	\item On définit l'amplitude de l'onde créée par les rayons de $(1)$ à $(p)$,
+		\[ S_p = \sum_{k=1}^{p}A_k = A_1 + \cdots + A_p. \]
+	Déduire des questions précédentes que l'expression de $S_p$ en fonction de $\phi$, $r$ et $p$ est
+		\[ S_p = A_1\frac{1-r^{2p}e^{ip\phi}}{1-r^2e^{i\phi}}. \]
+	\item Le rayon $(1)$ est issu du rayon initial d'amplitude $A_0$ après deux transmissions. Justifier qu'alors $A_1 = t^2A_0$, et en déduire l'expression de $S_p$ en foncton de $\phi$, $r$, $t$ et $p$.
+	\\
+	On admet que $\lim\limits_{p\to+\infty}r^{2p}e^{ip\phi} = 0$. On a alors que l'amplitude de l'onde totale est
+		\[ S = \lim_{p\to+\infty}S_p = t^2A_0\frac{1}{1-r^2e^{i\phi}}. \]
+	\item Exprimer $I(\phi) = \abs{S}^2$, l'intensité lumineuse en sortie de la lame, en fonction de $t$, $r$, $A_0$ et $\phi$.
+	\item Pour quelles valeurs de $\phi$ la fonction $I$ est elle maximale ?
 \end{enumerate}
+
+\begin{figure}
+	\centering
+	\begin{tikzpicture}
+	\begin{axis}[samples=500,
+		xscale=1.6,
+		domain={1/7*10^7}:{1/5*10^7},
+		axis lines=middle,
+		axis line style={->},
+		ymax = 1,
+		xlabel near ticks,
+		ylabel near ticks,
+		xlabel={Nombre d'onde $\frac 1 \lambda$},
+		ylabel={Transmittance $I(\phi)/I_0$}
+		]
+	\addplot[blue]plot (\x,{1/(1+100*sin(2*pi*1.33*0.0001*\x)^2)});
+	\end{axis}
+	\end{tikzpicture}
+	\caption{Graphe de la \textit{transmittance} $T$, rapport entre l'intensité lumineuse sortante $I(\phi)$ et l'intensité entrante $I_0$.}
+\end{figure}
+
 
 \end{document}
