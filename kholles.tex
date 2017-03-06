@@ -88,7 +88,7 @@
 \begin{document}
 	\maketitle
 
-\exercice[Une suite arithmético-géométrique]
+\exercice[Une suite arithmético-géométrique (M)]
 Soit $(u_n)_{n\in\NN}$ la suite définie par:
 \[
 \begin{array}{ll}
@@ -112,7 +112,7 @@ Déterminer l'expression de $S_n$.
 \end{enumerate}
 \textbf{Indication} Remarquer que $(u_n)$ est la somme d'une suite géométrique et d'une suite arithmétique, dont on précisera les premiers termes et les raisons respectives.
 
-\exercice
+\exercice[F]
 Soit $(u_n)$ une suite réelle, \textbf{supposée géométrique}, telle que
 \begin{align*}
 u_0 & = 3\\
@@ -127,7 +127,7 @@ Déterminer l'expression de $S_n$. Étudier la convergence de $(S_n)$ et, si ell
 \end{enumerate}
 
 
-\exercice
+\exercice[M]
 
 Soit $(u_n)$ la suite \textbf{complexe} définie par:
 \begin{align*}
@@ -142,7 +142,7 @@ u_{n+1} &= \left(\frac 1 4 + i\frac{\sqrt{3}}{4}\right)u_n
 \item Même questions que la 1. pour la suite $\left(\arg(u_n)\right)_{n\in\NN}$. Déterminer son expression et étudier sa convergence.
 \end{enumerate}
 
-\exercice
+\exercice[F]
 Déterminer les limites des suites suivantes:
 \begin{multicols}{2}
 \begin{enumerate}
@@ -157,7 +157,7 @@ Déterminer les limites des suites suivantes:
 \end{multicols}
 
 
-\exercice[Convergence d'une série]
+\exercice[Convergence d'une série (D)]
 Le but de l'exercice est de démontrer la convergence de la suite $(S_n)$ définie pour tout $n\geq 0$ par
 \[
 S_n := \sum_{k=0}^n \frac{\ln(1+k)}{3^k} = \frac{\ln(1+0)}{3^0} + \frac{\ln(1+1)}{3^1} + \cdots + \frac{\ln(1+n)}{3^n}.
@@ -183,7 +183,7 @@ est positive, via une étude de fonction.
 \item Conclure.
 \end{enumerate}
 
-\exercice[Marches aléatoires]
+\exercice[Marches aléatoires (M)]
 On considère une grille $n\times n$, où $n\in\NN^*$ de points du plan $(k,\ell)$ pour $0\leq k\leq n-1$ et $0\leq\ell\leq n-1$.
 \begin{figure}[h]
 \centering
@@ -213,7 +213,7 @@ Soit $X$ la variable aléatoire égale au nombre de déplacements vers la droite
 \end{enumerate}
 
 
-\exercice
+\exercice[F]
 Soit $(\Omega,\mathcal A,\PP)$ un espace probabilisé (un ensemble muni d'une probabilité). Calculer $\PP(B)$:
 \begin{enumerate}
 \item Sachant que $\PP(A) = 1/3$ et $\PP_A(B) = 2/5$ et $\PP_{\overline A}(B)=1/4$.
@@ -221,7 +221,7 @@ Soit $(\Omega,\mathcal A,\PP)$ un espace probabilisé (un ensemble muni d'une pr
 \end{enumerate}
 
 
-\exercice
+\exercice[M]
 Pour tout entier naturel $n$ supérieur ou égal à 2, on note $\mathbb U_n$ l'ensemble des nombres complexes $a$ tels que $a^n=1$. On montre que ses éléments sont de la forme
 \[
 \omega^k = e^{2ik\pi/n},\ 0\leq k\leq n-1,\ \text{où}\ \omega = e^{2i\pi/n}.
@@ -298,7 +298,29 @@ On munit $\mathbb U_n$ de la mesure de probabilité uniforme $\PP$. Ainsi, pour 
 	Quelle est la valeur moyenne de l'angle $\angle(M_wOM_z)$ ?
 \end{enumerate}
 
+\exercice[F]
+Résoudre les équations suivantes dans le corps $\CC$ des nombres complexes, calculer le module et l'argument des solutions, et les placer dans le plan complexe ramené à un repère orthonormé $(O,\vec u,\vec v)$:
+\begin{enumerate}
+\item $z^2+z+1 = 0$
+\item $z^2+4z+6 = 0$
+\item $z^4 + 6z^2 + 25 = 0$
+\end{enumerate}
 
+\exercice[D]
+Soit $f\colon\CC\longrightarrow\CC$ définie pour tout $z\in\CC$ par:
+\[ f(z) = z^3+5z^2+7z-13. \]
+On cherche à factoriser $f$ sur $\RR$, puis sur $\CC$.
+\begin{enumerate}
+\item Vérifier que $1$ est racine de $f$, c'est-à-dire que $f(1) = 0$.
+\item D'après un théorème que l'on admettra (cf. cours de L1 de mathématiques), il existe alors un trinôme du second degré à coefficients réels,
+\[ q(z) = az^2+bz+c \]
+tel que
+\[ f(z) = (z-1)q(z). \]
+\begin{enumerate}
+\item Déterminer $a$, $b$, et $c$ pour que l'égalité précédente soit vraie.
+\item Factoriser $q(z)$ (donc résoudre $q(z) = 0$). En déduire la forme factorisée de $f(z)$.
+\end{enumerate}
+\end{enumerate}
 
 \exercice[Bordeaux 1980]
 Pour tout réel $a$, on définit sur $\RR$ la fonction numérique $f_a$ par \[f_a(x) = e^{-x} + ax.\]
