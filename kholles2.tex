@@ -1,0 +1,401 @@
+\documentclass{article}
+\usepackage{polyglossia}
+\usepackage[a4paper,hmargin=4cm]{geometry}
+\usepackage{mathtools, amssymb, amsfonts}
+\usepackage{amsthm}
+\usepackage{fontspec}
+\usepackage{titling}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage[usenames,dvipsnames,svgnames]{xcolor}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepackage{mdframed}
+\usepackage[hidelinks]{hyperref}
+\usepackage{caption,subcaption}
+\usepackage{tikz}
+\usetikzlibrary{arrows,positioning,shapes,calc,angles,decorations.markings,patterns,decorations.pathmorphing}
+\usepackage[shortlabels]{enumitem}
+\usepackage{multicol}
+\usepackage{comment}
+
+\setdefaultlanguage{french}
+\frenchspacing
+
+\renewcommand{\phi}{\varphi}
+\renewcommand{\epsilon}{\varepsilon}
+\newcommand{\NN}{\mathbb N}
+\newcommand{\ZZ}{\mathbb Z}
+\newcommand{\RR}{\mathbb R}
+\newcommand{\QQ}{\mathbb Q}
+\newcommand{\CC}{\mathbb C}
+\newcommand{\KK}{\mathbb K}
+\newcommand{\PP}{\mathbb P}
+\DeclareMathOperator{\Card}{\mathrm{Card}}
+\DeclarePairedDelimiter{\zint}{[\![}{]\!]}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+\DeclareMathOperator{\dif}{\mathrm{d}\!}
+
+%% Titling configuration
+\pretitle{\begin{center}\hrulefill\\ \LARGE\textsc}
+\posttitle{\vspace{-2mm} \\\hrulefill\end{center}\vspace{-0.5em}}
+
+\title{Khôlles, épisode 2}
+
+\preauthor{\begin{center}}
+\author{{\normalfont\scshape Lycée Julie-Victoire Daubié}}
+\postauthor{\end{center}}
+
+\date{}
+
+%% Sectioning
+
+
+\renewcommand{\thesection}{\arabic{section}}
+
+\newcounter{Exercice}
+\makeatletter
+\newcommand{\exercice}[1][\@nil]{\refstepcounter{Exercice}
+	\section*{Exercice \theExercice
+	\def\tmp{#1}
+	\ifx\tmp\@nnil
+	%
+	\else
+	(#1)
+	\fi
+}}
+
+\makeatother
+
+\tikzset{roundnode/.style={circle, draw=black!100, thick, minimum size=2mm, fill=white!100,inner sep=0}, dot/.style={draw, circle,fill=black, minimum size=2mm,inner sep=0}}
+
+\tikzset{
+	pics/mysymbol/.style={
+		code = {
+			\def\radius{3cm};
+			\draw (0,0) circle (\radius);
+			
+			\foreach \x in {1,...,#1} {
+				\draw[dashed] ({360*(\x + 1)/#1}:\radius) -- (360*\x/#1:\radius);
+			}
+			
+			\foreach \x in {1,...,#1} {
+				\node[roundnode] (\x) at (360*\x/#1:\radius) {};
+			}
+}}}
+
+
+\begin{document}
+	\maketitle
+
+\exercice[Question de cours]
+
+Méthode des rectangles (appliquée sur un exemple au choix, sans calcul). Définition de l'intégrale à partir de cette méthode.
+
+
+
+\exercice[Question de cours]
+
+Propriétés générales de l'intégrale (linéarité, positivité et croissance, relation de Chasles).
+
+
+\exercice[Question de cours]
+
+\begin{enumerate}
+	\item Soit $n\in\ZZ$. Donner une primitive de $x\longmapsto x^n$.
+	\item Donner les primitives des fonctions $\sin$ et $\cos$.
+\end{enumerate}
+
+
+\exercice
+
+Calculer l'intégrale
+\[
+\int_{0}^{\frac{\pi}{4}} \tan(x)\dif x.
+\]
+
+On rappelle que $\tan = \dfrac{\sin}{\cos}$.
+
+\exercice[Question de cours]
+
+Démontrer, pour tout $n\in\NN^*$, l'égalité:
+\[
+1^2 + \cdots + n^2 = \frac{n(n+1)(2n+1)}{6}.
+\]
+
+
+\exercice[Moyenne d'une fonction]
+
+\paragraph{Questions de cours} Soit $[a,b]$ un segment de $\RR$ de longueur strictement positive, et $f\colon[a,b]\longrightarrow\RR$ une fonction continue.
+
+\begin{enumerate}
+	\item Que représente l'intégrale
+	\[
+	\frac{1}{b-a}\int_a^b f(x)\dif x\quad ?
+	\]
+	\item Énoncer, puis démontrer, l'inégalité de la moyenne.
+\end{enumerate}
+
+
+\paragraph{Théorème de la moyenne} Montrer qu'il existe un réel $c\in{]a,b[}$ tel que
+\[
+f(c) = \frac{1}{b-a}\int_a^b f(x) \dif x.
+\]
+
+
+
+
+
+
+\exercice[Inégalité triangulaire]
+
+Soient $x$ et $y$ deux réels. On rappelle que la \textit{valeur absolue} d'un réel $a$ est le réel $\sqrt{a^2}$, noté $\abs{a}$.
+
+\begin{enumerate}
+	\item Montrer que $\abs{x+y}\leq \abs x + \abs y$.
+\end{enumerate}
+
+Soient désormais $x_1,\ldots,x_n$ des réels, avec $n$ un entier naturel $\geq 2$.
+
+\begin{enumerate}[resume]
+	\item Montrer par récurrence l'inégalité:
+	\[
+	\abs{x_1 + \cdots + x_n} \leq \abs{x_1} + \cdots + \abs{x_n}.
+	\]
+\end{enumerate}
+
+Soit $[a,b]$ un segment de $\RR$, et $f\colon[a,b]\longrightarrow\RR$ une fonction continue.
+
+\begin{enumerate}[resume]
+	\item En revenant à la méthode des rectangles, montrer l'inégalité suivante:
+	\[
+	\abs*{\int_{a}^{b} f(x)\dif x} \leq \int_{a}^{b} \abs{f(x)} \dif x.
+	\]
+\end{enumerate}
+
+
+\exercice
+
+Soit, pour tout $n\in\NN$, $f_n$ la fonction définie sur $[0,1]$ par
+\[
+f_n(x) := x^n.
+\]
+
+\begin{enumerate}
+	\item Soit $x\in[0,1]$. Montrer que la suite $\left(f_n(x)\right)_{n\in\NN}$ converge vers un réel $f(x)$ que l'on précisera. La fonction $f$ est-elle continue ?
+	\item Pour tout $n\in\NN$, calculer l'intégrale
+	\[
+	\int_0^1 f_n(x)\dif x = \frac{1}{n+1}.
+	\]
+	Quelle est sa limite lorsque $n$ tend vers $+\infty$ ?
+\end{enumerate}
+
+\exercice[Un résultat contre-intuitif]
+
+Soit, pour tout entier naturel non nul $n$, la fonction $f_n$ définie sur $\RR^+$ par
+\[
+f_n(x) := \frac{1}{n}e^{-x/n}.
+\]
+
+\begin{enumerate}
+	\item Montrer que pour tout réel positif $x$, la suite $\left(f_n(x)\right)_{n\in\NN^*}$ converge vers un réel $f(x)$ que l'on précisera.
+	\item Montrer que la fonction $x\longmapsto -e^{-x/n} $ est une primitive de $f_n$.
+	\item Soit $n$ un entier naturel non nul. Montrer que le réel
+	\[
+	I_n := \int_0^{+\infty} f_n(x)\dif x = \lim_{R\to+\infty}\int_0^R f_n(x)\dif x
+	\]
+	est bien défini, et le calculer.
+	\item Montrer que la suite $(I_n)$ converge vers un réel que l'on précisera.
+\end{enumerate}
+
+\exercice[Le théorème d'intégration par parties]
+
+Soit $[a,b]$ un segment de $\RR$. Soient $u$ et $v$ des fonctions $[a,b]\longrightarrow \RR$ de classe $\mathcal{C}^1$ (c'est-à-dire dérivables de dérivées continues).
+
+\begin{enumerate}
+	\item Donner une primitive de $u'v + uv'$ sur $[a,b]$.
+	\item En déduire la relation suivante:
+	\[
+	\int_{a}^{b} u'(x)v(x)\dif x = \left[u(x)v(x)\right]_{a}^b - \int_{a}^{b} u(x)v'(x)\dif x.
+	\]
+\end{enumerate}
+
+On pourra désormais appliquer le théorème dans les exercices.
+
+Une application:
+\begin{enumerate}[resume]
+	\item Déterminer une primitive de la fonction logarithme népérien $\ln$.
+\end{enumerate}
+
+
+
+
+\exercice[Aix-Marseille 1985]
+
+Soit $x$ un réel. Calculer l'intégrale:
+\[
+G(x) = \int_0^x t^2e^{-t}\dif t.
+\]
+
+Dresser le tableau de variations de $G$ sur $\RR$.
+
+\exercice[Antilles 1986]
+
+\begin{enumerate}
+	\item \begin{enumerate}
+		\item Montrer que, pour tout réel $x$,
+		\[
+		\frac{1}{(e^x+1)^2} = 1 - \frac{e^x}{e^x+1} - \frac{e^x}{(e^x+1)^2}.
+		\]
+		\item Calculer l'intégrale
+		\[
+		I = \int_{0}^{1} \frac{1}{(e^x + 1)^2}\dif x.
+		\]
+	\end{enumerate}
+	\item \begin{enumerate}
+		\item Déterminer une primitive de la fonction
+		\[
+		x\longmapsto \frac{e^x}{(e^x+1)^3}.
+		\]
+		\item Calculer, à l'aide d'une intégration par parties, l'intégrale
+		\[
+		J = \int_0^1 \frac{xe^x}{(e^x + 1)^3}\dif x.
+		\]
+	\end{enumerate}
+\end{enumerate}
+
+
+\exercice[Fonctions paires, impaires, périodiques]
+
+Soit $a$ un réel non nul.
+Soit $f\colon[-a,a]\longrightarrow\RR$ une fonction continue.
+
+\begin{enumerate}
+	\item On suppose qu'elle est paire, donc telle que
+	\[
+	\forall x\in[-a,a]\quad f(-x) = f(x).
+	\]
+	Exprimer
+	\[
+	\int_{-a}^{a} f(x)\dif x
+	\]
+	\item De même si $f$ est impaire, soit telle que
+	\[
+	\forall x\in[-a,a]\quad f(-x) = -f(x).
+	\]
+\end{enumerate}
+
+On suppose désormais que $f$ est définie sur $\RR$, et qu'elle est \textit{périodique}: il existe un réel $T > 0$ tel que
+\[
+\forall x\in\RR\quad f(x+T) = f(x).
+\]
+\begin{enumerate}[resume]
+	\item Soit $a$ un réel. Montrer que
+	\[
+	\int_{a}^{a+T} f(x)\dif x.
+	\]
+	ne dépend pas de $a$.
+\end{enumerate}
+
+
+\exercice[Lille 1989]
+
+Le but de l'exercice est d'étudier les intégrales $I_n$ définies pour tout entier naturel non nul $n$ par
+\[
+I_n = \int_0^1 (1-x^n)\sqrt{1-x^2}\dif x.
+\]
+On pose
+\[
+J_0 = \int_0^1 \sqrt{1-x^2}\dif x
+\]
+et pour tout $n\in\NN^*$
+\[
+J_n = \int_0^1 x^n\sqrt{1-x^2}\dif x.
+\]
+
+\begin{enumerate}
+	\item Tracer la courbe représentative de la fonction $x\in[0,1]\longmapsto \sqrt{1-x^2}$. En déduire $J_0$.
+	\item \begin{enumerate}
+		\item Calculer $J_1$.
+		\item En déduire $I_1$. Une interprétation géométrique ?
+	\end{enumerate}
+	\item \begin{enumerate}
+		\item Étudier le sens de variation de la suite $(J_n)_{n\geq 1}$.
+		\item En déduire que les suites $(J_n)$, puis $(I_n)$, convergent.
+	\end{enumerate}
+	\item \begin{enumerate}
+		\item Démontrer l'encadrement
+		\[
+		0 \leq J_n \leq \int_0^1 x^n\dif x.
+		\]
+		\item En déduire les limites de $(I_n)$ et $(J_n)$.
+	\end{enumerate}
+\end{enumerate}
+
+
+
+\exercice
+
+\begin{enumerate}
+	\item Soit $x$ un réel. Démontrer que
+	\[
+	\cos(nx) + i\sin(nx) = \left(\cos(x) + i\sin(x)\right)^n.
+	\]
+	\item En déduire $\sin^3 x$ en fonction de $1$, $\sin x$, $\sin(2x)$ et $\sin(3x)$.
+	\item En déduire l'intégrale
+	\[
+	\int_0^{\pi/4} \sin^3x \dif x.
+	\]
+\end{enumerate}
+
+
+\exercice[Strasbourg 1987]
+
+On pose $I_0 =\int_0^e x\dif x$, et pour tout $n$ de $\NN^*$,
+\[
+I_n = \int_1^e x(\ln x)^n\dif x.
+\]
+
+\begin{enumerate}
+	\item Calculer $I_0$ et $I_1$.
+	\item Pour tout $n$ de $\NN^*$, établir, via une intégration par parties,
+	\[
+	2I_n + nI_{n-1} = e^2.
+	\]
+	En déduire $I_2$.
+	\item Montrer que la suite $(I_n)_{n\geq 1}$ est décroissante. En déduire, en utilisant la relation de récurrence précédente, l'encadrement
+	\[
+	\frac{e^2}{n+3} \leq I_n \leq \frac{e^2}{n+2}.
+	\]
+	Calculer $\lim\limits_{n\to+\infty}I_n$ et $\lim\limits_{n\to+\infty}nI_n$.
+\end{enumerate}
+
+
+\exercice[Lille 1985]
+
+On considère la suite $(u_n)$ définie pour tout $n\geq 3$ par
+\[
+u_n = \sum_{k=2}^{n} \frac{1}{k\ln k} = \frac{1}{2\ln 2}+ \cdots + \frac{1}{n\ln n}.
+\]
+
+\begin{enumerate}
+	\item Soit $f$ la fonction de la variable réelle définie par $f(x)= \frac{1}{x\ln x}$. Quel est son ensemble de définition ?\\
+	Montrer que $f$ est décroissante sur $]1,+\infty[$.
+	\item Montrer que, pour tout $k\geq 2$,
+	\[
+	\frac{1}{k\ln k} \geq \int_{k}^{k+1}f(x)\dif x.
+	\]
+	En déduire que
+	\[
+	u_n \geq \int_2^{n+1} f(x)\dif x.
+	\]
+	\item Calculer
+	\[
+	I_n = \int_2^n f(x) \dif x
+	\]
+	en fonction de $n$, puis sa limite.\\
+	En déduire la limite de $(u_n)$.
+\end{enumerate}
+
+\end{document}
